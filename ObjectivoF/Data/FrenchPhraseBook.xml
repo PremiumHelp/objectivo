@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<PhrasebookElements>
+    <PhrasebookElement>
+
+        <Original>Hello, please…!</Original>
+        <Translated>Bonjour. S’il vous plaît…</Translated>
+         </PhrasebookElement>
+
+    <PhrasebookElement>
+    <Original> Yes / No</Original>
+        <Translated>Oui / Non</Translated>
+         </PhrasebookElement>
+    
+     <PhrasebookElement>
+         <Original>  Do you speak English?</Original>
+        <Translated>Parlez-vous anglais ?</Translated>
+         </PhrasebookElement>
+    
+          <PhrasebookElement>
+         <Original>Where can I find a city map?</Original>
+        <Translated>Où est-ce que je peux trouver un plande la ville ?</Translated>
+         </PhrasebookElement>
+    
+     <PhrasebookElement>
+         <Original> Where is…?</Original>
+        <Translated>Où est…?</Translated>
+         </PhrasebookElement>
+     <PhrasebookElement>
+         <Original>How much does it cost?</Original>
+        <Translated>Combien ça coûte?</Translated>
+         </PhrasebookElement>
+     <PhrasebookElement>
+        <Original>Thank you very much!</Original>
+        <Translated>Merci beaucoup !</Translated>
+         </PhrasebookElement>
+          <PhrasebookElement>
+        <Original>Goodbye!</Original>
+        <Translated>Au revoir!</Translated>
+         </PhrasebookElement>
+     
+</PhrasebookElements>

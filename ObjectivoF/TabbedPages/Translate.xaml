@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ObjectivoF.TabbedPages.Translate"  Title="Translate" Icon="language.png" >
+   
+    <StackLayout Margin="20">
+        <Label Text="Translator" FontAttributes="Bold" HorizontalOptions="Center"/>
+        <Picker Title="Select a Language" SelectedIndexChanged="OnPickerSelectedIndexChanged"  ItemsSource="{Binding LanguageList}"
+                    ItemDisplayBinding="{Binding Value}"  SelectedItem="{Binding PickerChoiceFrom }"
+                    Margin="0,40">
+        <Picker.Items>
+
+            </Picker.Items>
+        </Picker>
+       
+        
+        <Entry  Placeholder="Type something to translate.." Text="{Binding ToBeTranslated}"></Entry>
+
+        <Button Text="Translate" FontAttributes="Bold" FontFamily="Avier" TextColor="Purple" Command="{Binding OnTranslateButtonClickedCommand}"></Button>
+
+
+        <Picker Title="Select a Language" SelectedIndexChanged="OnPickerSelectedIndexChanged2"  ItemsSource="{Binding LanguageList}"
+                    ItemDisplayBinding="{Binding Value}" SelectedItem="{Binding PickerChoiceTo }"  Margin="0,40">
+        <Picker.Items>
+
+            </Picker.Items>
+        </Picker>
+        <Entry   Placeholder="Translated text will be here.." Text="{Binding Translated}"></Entry>
+
+      </StackLayout>
+</ContentPage>

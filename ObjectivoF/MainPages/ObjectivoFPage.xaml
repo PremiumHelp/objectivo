@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:ObjectivoF" x:Class="ObjectivoF.ObjectivoFPage" >
+
+    <StackLayout VerticalOptions="Center" Orientation="Vertical" Padding="30" Spacing="20" Margin="10"    >
+        
+            <Label Text="Email" TextColor="Gray" FontAttributes="Bold" FontFamily="Avenir"  />
+            <Entry  Placeholder="username" TextColor="Gray" FontFamily="Avenir" Text="{Binding email}" />
+
+            <Label Text="Password" TextColor="Gray" FontFamily="Avenir" FontAttributes="Bold"/>
+            <Entry  Placeholder="password" FontFamily="Avenir" Text="{Binding password}"/>
+
+
+        <Button Text="Login"  TextColor="Purple" FontAttributes="Bold" FontFamily="Avenir"  Clicked="TabControl" />
+                <Button Text="Register"  TextColor="Gray" FontAttributes="Bold" FontFamily="Avenir" Clicked="SignUp" />
+
+            <Label  />
+        </StackLayout>
+
+   
+</ContentPage>

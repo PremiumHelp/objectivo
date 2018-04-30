@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ObjectivoF.ObjectTranslation">
+    <ContentPage.Content>
+          <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <ContentView Grid.Row="0">
+                <StackLayout Padding="15,10,0,0"
+                             Spacing="25">
+                    
+                    <StackLayout Padding="25,0">
+                        <Button Text="Take a photo" TextColor="Purple" FontAttributes="Bold"
+                               Command="{Binding TakePhoto}"/>
+                        <Button Text="Select a photo" TextColor="Purple"
+                                FontAttributes="Bold"
+                              Command="{Binding SelectPhoto}" 
+                                />
+                    </StackLayout>
+                    <Label Text="{Binding SelectedPhoto}"
+                           TextColor="Purple"
+                           FontSize="17" />
+                </StackLayout>
+            </ContentView>
+
+            <ContentView Grid.Row="1">
+                <StackLayout Padding="15,10,0,0"
+                             IsVisible="{Binding IsVisible}">
+                    <Label 
+                           FontSize="35"
+                           TextColor="#757575" />
+                    <Label Text="{Binding MetaData}"
+                           FontSize="17"
+                           TextColor="#202020" />
+                    <Label Text="{Binding CaptionText}"
+                           FontSize="17"
+                           TextColor="#202020" />
+                    <Label Text="{Binding Tags}"
+                           FontSize="17"
+                           TextColor="#202020" />
+                </StackLayout>
+            </ContentView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

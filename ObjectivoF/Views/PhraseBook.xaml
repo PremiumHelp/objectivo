@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ObjectivoF.PhraseBook">
+
+    <StackLayout  Orientation="Vertical" VerticalOptions="StartAndExpand" Padding="0" Spacing="70" Margin="70">
+            
+    <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand" >
+                
+    <StackLayout Orientation="Vertical"  HorizontalOptions="Start" >
+        <Button Text="Spanish" FontSize="25" TextColor="Black"  FontFamily="avenir" WidthRequest="100" HeightRequest="59" Clicked="Spanish"  />
+    </StackLayout>
+    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+        <Image Source="spain.png" WidthRequest="150" HeightRequest="55"/>
+    </StackLayout>
+</StackLayout>
+
+         <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand" >
+                
+    <StackLayout Orientation="Vertical"  HorizontalOptions="Start" >
+        <Button Text="German" FontSize="25" FontFamily="avenir" TextColor="Black" WidthRequest="100" HeightRequest="59" Clicked="German"/>
+    </StackLayout>
+    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+        <Image Source="german.png" WidthRequest="150" HeightRequest="55"/>
+    </StackLayout>
+</StackLayout>
+
+
+         <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand" >
+                
+    <StackLayout Orientation="Vertical"  HorizontalOptions="Start" >
+        <Button Text="Italian" FontSize="25" FontFamily="avenir" TextColor="Black" WidthRequest="100" HeightRequest="59"  Clicked="Italian"  />
+    </StackLayout>
+    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+        <Image Source="italy.png" WidthRequest="150" HeightRequest="55"/>
+    </StackLayout>
+</StackLayout>
+ 
+
+
+         <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand" >
+                
+    <StackLayout Orientation="Vertical"  HorizontalOptions="Start" >
+        <Button Text="French" FontSize="25" FontFamily="avenir" TextColor="Black" WidthRequest="100" HeightRequest="59" Clicked="French"/>
+    </StackLayout>
+    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+        <Image  Source="french.png" WidthRequest="150" HeightRequest="55"/>
+
+    </StackLayout>
+</StackLayout>
+
+         
+                
+
+   </StackLayout>
+
+
+        
+      
+
+
+
+
+       
+
+    
+</ContentPage>

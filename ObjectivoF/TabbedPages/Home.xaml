@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ObjectivoF.TabbedPages.Home" Title="Home" Icon="home2.png">
+
+
+        
+    <StackLayout  Orientation="Vertical" VerticalOptions="StartAndExpand" Padding="0" Spacing="70" Margin="70">
+            
+    <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand" >
+                
+    <StackLayout Orientation="Vertical"  HorizontalOptions="Start" >
+        <Image Source="locka.png" WidthRequest="30" HeightRequest="30"/>
+    </StackLayout>
+    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+        <Button Text="Voice Translation" Clicked="VoiceTranslation" TextColor="Black" FontFamily="Avenir"  FontSize="18"/>
+    </StackLayout>
+</StackLayout>
+
+        <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+        <Image Source="object.png" WidthRequest="35" HeightRequest="35"/>
+    </StackLayout>
+    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+        <Button Text="Object Translation" Clicked="ObjectTranslation" TextColor="Black" FontFamily="Avenir" FontSize="18"/>
+    </StackLayout>
+</StackLayout>
+
+        <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+        <Image Source="phrase.png" WidthRequest="30" HeightRequest="30"/>
+    </StackLayout>
+    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+        <Button Text="Phrase Book" Clicked="PhraseBook" TextColor="Black" FontFamily="Avenir" FontSize="18"/>
+    </StackLayout>
+</StackLayout>
+
+        <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+        <Image Source="word.png" WidthRequest="30" HeightRequest="30"/>
+    </StackLayout>
+    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+        <Button Text="Word Translation" Clicked="WordTranslation" TextColor="Black" FontFamily="Avenir" FontSize="18"/>
+    </StackLayout>
+</StackLayout>
+
+</StackLayout>
+
+        
+
+    
+</ContentPage>

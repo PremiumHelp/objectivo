@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ObjectivoF.TabbedPages.About" Title="About" Icon="aboutus.png">
+	<StackLayout>
+        <Image Source="circle512.png" Margin="120,0,100,400" />
+         
+            
+  <Label Text="My Voice Contribution" Margin="20,20,100,400" />
+         <Label Text="My Comments" Margin="12,0,1,400" />
+         <Label Text="Notification" Margin="12,0,100,400" />
+        <Label Text="Settings"  />
+  </StackLayout>
+        
+
+</ContentPage>
