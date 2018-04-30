@@ -11,7 +11,7 @@
 namespace ObjectivoF {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/amrafeta/Desktop/ObjectivoF/ObjectivoF/MainPages/StartPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/amrafeta/Desktop/ObjectivoF/objectivo/ObjectivoF/MainPages/StartPage.xaml")]
     public partial class StartPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

@@ -11,7 +11,7 @@
 namespace ObjectivoF {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/amrafeta/Desktop/ObjectivoF/ObjectivoF/App.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/amrafeta/Desktop/ObjectivoF/objectivo/ObjectivoF/App.xaml")]
     public partial class App : global::Xamarin.Forms.Application {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

@@ -11,7 +11,7 @@
 namespace ObjectivoF.TabbedPages {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/amrafeta/Desktop/ObjectivoF/ObjectivoF/TabbedPages/About.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/amrafeta/Desktop/ObjectivoF/objectivo/ObjectivoF/TabbedPages/About.xaml")]
     public partial class About : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
