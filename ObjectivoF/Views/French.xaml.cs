@@ -1,7 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-
 using Xamarin.Forms;
+using System.Reflection;
+using System.IO;
+using System.Xml.Serialization;
+using System.Collections.ObjectModel;
+using ObjectivoF.Data;
+using System.Threading.Tasks;
+using System.Xml.Linq;
+using System.Linq;
 
 namespace ObjectivoF
 {
@@ -9,7 +16,40 @@ namespace ObjectivoF
     {
         public French()
         {
-            InitializeComponent();
+            #region How to load an XML file embedded resource
+            var assembly = IntrospectionExtensions.GetTypeInfo(typeof(LoadResourceText)).Assembly;
+            Stream stream = assembly.GetManifestResourceStream("ObjectivoF.Data.FrenchPhraseBook.xml");
+
+            List<Phrases> phrases;
+            using (var reader = new System.IO.StreamReader(stream))
+            {
+                var serializer = new XmlSerializer(typeof(List<Phrases>));
+                phrases = (List<Phrases>)serializer.Deserialize(reader);
+            }
+            #endregion
+
+            var listView = new ListView();
+            listView.ItemsSource = phrases;
+            var image = new Image { Source = "france.jpg" };
+
+            Content = new StackLayout
+            {
+                Padding = new Thickness(0, 20, 0, 0),
+                VerticalOptions = LayoutOptions.StartAndExpand,
+                Children = {
+                    new Image { Source="france.jpg"
+                    },
+                 listView
+                }
+            };
+
+           
         }
     }
 }
+
+
+
+
+
+

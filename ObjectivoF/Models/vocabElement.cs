@@ -7,6 +7,7 @@ namespace ObjectivoF.Models
 	public class vocabElement:INotifyPropertyChanged
     {
 		public event PropertyChangedEventHandler PropertyChanged;
+
 		private string _translated;
         private string _original;
 

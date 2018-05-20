@@ -1,20 +1,16 @@
 ﻿<Properties StartupConfiguration="{BC05B089-5F0E-44F0-B215-83018782BBEB}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ObjectivoF/ViewModel/ViewModelVocab.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Main.cs">
     <Files>
-      <File FileName="ObjectivoF/TabbedPages/Favorites.xaml" Line="16" Column="30" />
-      <File FileName="ObjectivoF/TabbedPages/Favorites.xaml.cs" Line="26" Column="55" />
-      <File FileName="ObjectivoF/ViewModel/ViewModelVocab.cs" Line="28" Column="17" />
+      <File FileName="ObjectivoF/TabbedPages/Favorites.xaml" Line="8" Column="50" />
+      <File FileName="ObjectivoF/TabbedPages/Favorites.xaml.cs" Line="18" Column="26" />
+      <File FileName="ObjectivoF/ViewModel/ViewModelVocab.cs" Line="69" Column="6" />
       <File FileName="ObjectivoF/App.xaml.cs" Line="8" Column="1" />
       <File FileName="ObjectivoF/ViewModel/ViewModelObject.cs" Line="62" Column="69" />
-      <File FileName="ObjectivoF/MainPages/SignUp.xaml" Line="26" Column="1" />
-      <File FileName="ObjectivoF/MainPages/SignUp.xaml.cs" Line="19" Column="1" />
+      <File FileName="ObjectivoF/MainPages/SignUp.xaml" Line="1" Column="21" />
+      <File FileName="ObjectivoF/MainPages/SignUp.xaml.cs" Line="66" Column="57" />
       <File FileName="ObjectivoF/Models/Vocab.cs" Line="17" Column="1" />
-      <File FileName="ObjectivoF/Models/vocabElement.cs" Line="25" Column="3" />
-      <File FileName="ObjectivoF/Constants.cs" Line="24" Column="1" />
-      <File FileName="ObjectivoF/MainPages/ObjectivoFPage.xaml.cs" Line="29" Column="1" />
-      <File FileName="ObjectivoF/MainPages/ObjectivoFPage.xaml" Line="17" Column="23" />
-      <File FileName="ObjectivoF/ViewModel/ViewModelBase.cs" Line="1" Column="1" />
-      <File FileName="ObjectivoF/ViewModel/ViewModelTranslate.cs" Line="66" Column="40" />
+      <File FileName="ObjectivoF/Models/vocabElement.cs" Line="25" Column="10" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

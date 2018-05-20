@@ -1,24 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ObjectivoF.TabbedPages.About" Title="About" Icon="aboutus.png">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ObjectivoF.TabbedPages.About" Title="About" Icon="aboutus.png" >
 
 
-    <StackLayout HorizontalOptions="Fill" Padding="0,250,0,0">
+    <StackLayout HorizontalOptions="Fill" Padding="0,100,0,0">
 
         <StackLayout>
-      <Image Source="arrow.png" WidthRequest="10" Margin="280,0,0,0" ></Image>
-  <Label Text="My Articles" FontFamily="Avenir" Margin="4,-21" />
+                   <Label Text="Profile Settings" FontAttributes="Bold"  Margin="4,16,0,15"></Label>
+
+      <Image Source="arrow.png" WidthRequest="10" Margin="280,0,0,0"  ></Image>
+
+            <Label Text="Theme" FontFamily="Avenir" Margin="4,-21" />
             </StackLayout>
-         <Image Source="arrow.png" WidthRequest="10" Margin="280,20,0,0" ></Image>
+        
+         
 
-        <Label Text=" My Comments" Margin="0, -22,0,70" FontFamily="Avenir"  />
-        <Image Source="arrow.png" WidthRequest="10" Margin="280,20,0,0" ></Image>
+      
+            
+        <Label Text=" Notification" Margin="0, 30,0,70" FontFamily="Avenir"  />
 
-        <Label Text="Notifications" FontFamily="Avenir" Margin="5,-22,0,0" />
+        <Switch Margin="300,-100,0,0" IsToggled="{Binding RememberLastUser} "></Switch>
+
+       
+         <Label Text="Account" FontAttributes="Bold" Margin="5,16,0,15"></Label>
+
+        <Image Source="arrow.png" WidthRequest="10" Margin="280,30,0,0"  ></Image>
+
+        <Label Text="Authentication" FontFamily="Avenir" Margin="5,-30,0,0" />
          <Image Source="arrow.png" WidthRequest="10" Margin="280,20,0,0" ></Image>
-  <Label Text="Settings" FontFamily="Avenir" Margin="5,-22" />
-         <Image Source="arrow.png" WidthRequest="10" Margin="280,50,0,0" ></Image>
-  <Label Text="About" FontFamily="Avenir" Margin="5,-27,0,0" />
-          
+  <Label Text="Mobile data use" FontFamily="Avenir" Margin="5,-33" />
+         <Image Source="arrow.png" WidthRequest="10" Margin="280,60,0,0" ></Image>
+  <Label Text="Language" FontFamily="Avenir" Margin="5,-28,0,0" />
+
+        <Label Text="Support" Margin="7,40" FontAttributes="Bold"></Label>
+                <Label Text="Call us" Margin="7,0" FontFamily="Avenir" ></Label>
+               <Label Text="Feedback" Margin="7,0" FontFamily="Avenir" ></Label>
+
+        
 </StackLayout>
         
 

@@ -173,6 +173,7 @@
     <BundleResource Include="Resources\spain.jpg" />
     <BundleResource Include="Resources\arrow.png" />
     <BundleResource Include="Resources\voc.png" />
+    <BundleResource Include="Resources\images.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
