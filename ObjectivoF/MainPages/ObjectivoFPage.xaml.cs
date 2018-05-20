@@ -1,11 +1,14 @@
 ﻿using Xamarin.Forms;
 using System;
+using System.Net;
+using Newtonsoft.Json.Linq;
+using ObjectivoF.Services;
 
 namespace ObjectivoF
 {
     public partial class ObjectivoFPage : ContentPage
     {
-        const string uri = "http://localhost:4200/user/";
+		private const string path = "/user/";
         public string email { get; set; }
         public string password { get; set; }
 
@@ -14,16 +17,12 @@ namespace ObjectivoF
             InitializeComponent();
             BindingContext = this;
         }
-       
+	
 
-        async void TabControl(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new TabControl());
-        }
 
         async void SignUp(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new SignUp());
+			await Navigation.PushAsync(new SignUp());
         }
 
      
@@ -32,11 +31,57 @@ namespace ObjectivoF
 
         async void Login(object sender, EventArgs e)
         {
-            //TODO send warning if one of the email or passowrd is empty
-            System.Diagnostics.Debug.WriteLine(email , password);
-            var response = await HttpService.Login(uri + "signIn", email, password);
-            System.Diagnostics.Debug.WriteLine(response);
-            //TODO IF StatusCode == 200 go to the main page and take the userId and save it in session
+         
+			if (!CheckEntries())
+            {
+                return;
+            }
+            User user = new User();
+            user.Email = email;
+            user.Password = password;
+            try
+           {
+
+				var response = await HttpService.Login(Constants.uri  +path+  "signIn", email, password);
+                if (response.StatusCode == HttpStatusCode.BadRequest)
+                {
+                    DisplayErrorAlert("Wrong email or password");
+                }
+                else if (response.StatusCode == HttpStatusCode.OK)
+                {
+                    var data = await response.Content.ReadAsStringAsync();
+                    var UserId = JObject.Parse(data);
+					App.UserId = UserId["userId"].ToString();
+
+                   
+					App.Current.MainPage = new NavigationPage(new TabControl());
+                }
+                else
+                {
+                    DisplayErrorAlert("Something went wrong!");
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+                DisplayErrorAlert("Something went wrong!");
+            }
         }
+		private bool CheckEntries()
+        {
+			if (!CheckEntryService.CheckEntry(EmailEntry,email) ||
+			    !CheckEntryService.CheckEntry(PasswordEntry, password) ||
+               !CheckEntryService.CheckEmailSyntax(email, EmailEntry))
+            {
+                return false;
+            }
+            return true;
+
+        }
+        private void DisplayErrorAlert(string message)
+        {
+            DisplayAlert("Alert", message, "OK");
+        }
+
     }
 }

@@ -1,18 +1,24 @@
 ﻿<Properties StartupConfiguration="{BC05B089-5F0E-44F0-B215-83018782BBEB}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ObjectivoF/Views/ObjectTranslation.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ObjectivoF/ViewModel/ViewModelVocab.cs">
     <Files>
-      <File FileName="ObjectivoF/Services/TextTranslationService.cs" Line="15" Column="29" />
-      <File FileName="ObjectivoF/ViewModel/ViewModelTranslate.cs" Line="36" Column="64" />
-      <File FileName="ObjectivoF/TabbedPages/Translate.xaml" Line="30" Column="1" />
-      <File FileName="ObjectivoF/Views/French.xaml" Line="27" Column="1" />
-      <File FileName="ObjectivoF/Views/French.xaml.cs" Line="46" Column="1" />
-      <File FileName="../../../../../Library/Frameworks/Mono.framework/Versions/5.8.1/lib/mono/msbuild/15.0/bin/Microsoft.Common.CurrentVersion.targets" Line="2057" Column="5" />
-      <File FileName="iOS/Info.plist" />
-      <File FileName="ObjectivoF/Views/ObjectTranslation.xaml.cs" Line="31" Column="16" />
+      <File FileName="ObjectivoF/TabbedPages/Favorites.xaml" Line="16" Column="30" />
+      <File FileName="ObjectivoF/TabbedPages/Favorites.xaml.cs" Line="26" Column="55" />
+      <File FileName="ObjectivoF/ViewModel/ViewModelVocab.cs" Line="28" Column="17" />
+      <File FileName="ObjectivoF/App.xaml.cs" Line="8" Column="1" />
+      <File FileName="ObjectivoF/ViewModel/ViewModelObject.cs" Line="62" Column="69" />
+      <File FileName="ObjectivoF/MainPages/SignUp.xaml" Line="26" Column="1" />
+      <File FileName="ObjectivoF/MainPages/SignUp.xaml.cs" Line="19" Column="1" />
+      <File FileName="ObjectivoF/Models/Vocab.cs" Line="17" Column="1" />
+      <File FileName="ObjectivoF/Models/vocabElement.cs" Line="25" Column="3" />
+      <File FileName="ObjectivoF/Constants.cs" Line="24" Column="1" />
+      <File FileName="ObjectivoF/MainPages/ObjectivoFPage.xaml.cs" Line="29" Column="1" />
+      <File FileName="ObjectivoF/MainPages/ObjectivoFPage.xaml" Line="17" Column="23" />
+      <File FileName="ObjectivoF/ViewModel/ViewModelBase.cs" Line="1" Column="1" />
+      <File FileName="ObjectivoF/ViewModel/ViewModelTranslate.cs" Line="66" Column="40" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
-  <MonoDevelop.Ide.ItemProperties.ObjectivoF.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus_5X_API_26" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.ObjectivoF.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus_5X_API_27" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/amrafeta/Desktop/ObjectivoF/objectivo/ObjectivoF/ViewModel/TestViewModel.cs" relfile="ObjectivoF/ViewModel/TestViewModel.cs" line="19" column="1" />
@@ -20,5 +26,5 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.ObjectivoF.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.b69918bfa9e5cfdc1b1c89696868c59f39a09cbd" automaticSigning="False" />
+  <MonoDevelop.Ide.ItemProperties.ObjectivoF.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.BDEC50E2-9439-4E8F-9029-62CA66BECDF7" automaticSigning="False" />
 </Properties>

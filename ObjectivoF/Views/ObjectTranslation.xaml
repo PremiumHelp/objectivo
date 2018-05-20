@@ -1,22 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ObjectivoF.ObjectTranslation">
-    <StackLayout Orientation="Vertical">
-    <Button x:Name="TakePictureButton" Clicked="TakePictureButton_Clicked"
-          Text="Take from camera"/>
-    <Button x:Name="UploadPictureButton" Clicked="UploadPictureButton_Clicked"
-        Text="Pick a photo"/>
-    <ActivityIndicator x:Name="Indicator1" IsVisible="False" IsRunning="False" />
-    <Image x:Name="Image1" HeightRequest="240" />
+<ContentPage.Content>
 
-    <StackLayout Orientation="Horizontal">
-      <Label Text="Language: "/>
-      <Label Text="{Binding Language}"/>
+   <StackLayout Orientation="Vertical">
+    <Button x:Name="TakePictureButton"  Command="{Binding TakePictureButtonClicked}"
+          Text="Take a photo"  Margin="32,15,30,32"  FontSize="20" FontAttributes="Bold" FontFamily="Lucida Grande" BackgroundColor="#BDB5C4" TextColor="White"/>
+    <Button x:Name="UploadPictureButton" Command="{Binding UploadPictureButtonClicked}"
+        Text="Pick a photo" Margin="32,-20,30,32"  FontSize="20" FontAttributes="Bold" FontFamily="Lucida Grande" BackgroundColor="#BDB5C4" TextColor="White"/>
+<!--    <ActivityIndicator x:Name="Indicator1" IsVisible="False" IsRunning="False" />-->
+    <Image  Source="{Binding Image1}"  HeightRequest="240" WidthRequest="320" />
+    
+    <ScrollView Padding="10">
+
+      <StackLayout>
+        
+       <StackLayout Orientation="Horizontal">
+          <Label Text="Description: "/>
+          <Label Text="{Binding Description}"/>
+        </StackLayout>
+                    
+
+       <StackLayout Orientation="Horizontal">
+          <Label Text="Translated Description: "/>
+          <Label Text="{Binding TranslatedDescription}"/>
+        </StackLayout>
+             
+      </StackLayout>
+
+      </ScrollView>
     </StackLayout>
-
-    <ScrollView>
-      <StackLayout x:Name="DetectedText"/>
-    </ScrollView>
-
-  </StackLayout>
+    </ContentPage.Content>
     
 </ContentPage>

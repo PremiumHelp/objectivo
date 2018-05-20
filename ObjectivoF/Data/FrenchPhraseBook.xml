@@ -1,41 +1,33 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<PhrasebookElements>
-    <PhrasebookElement>
+<ArrayOfPhrases xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Phrases>
+        <Name>Hello, please…!       Bonjour. S’il vous plaît…</Name>
 
-        <Original>Hello, please…!</Original>
-        <Translated>Bonjour. S’il vous plaît…</Translated>
-         </PhrasebookElement>
+    </Phrases>>
+    <Phrases>
+        <Name>Yes/No   Oui/No</Name>
 
-    <PhrasebookElement>
-    <Original> Yes / No</Original>
-        <Translated>Oui / Non</Translated>
-         </PhrasebookElement>
-    
-     <PhrasebookElement>
-         <Original>  Do you speak English?</Original>
-        <Translated>Parlez-vous anglais ?</Translated>
-         </PhrasebookElement>
-    
-          <PhrasebookElement>
-         <Original>Where can I find a city map?</Original>
-        <Translated>Où est-ce que je peux trouver un plande la ville ?</Translated>
-         </PhrasebookElement>
-    
-     <PhrasebookElement>
-         <Original> Where is…?</Original>
-        <Translated>Où est…?</Translated>
-         </PhrasebookElement>
-     <PhrasebookElement>
-         <Original>How much does it cost?</Original>
-        <Translated>Combien ça coûte?</Translated>
-         </PhrasebookElement>
-     <PhrasebookElement>
-        <Original>Thank you very much!</Original>
-        <Translated>Merci beaucoup !</Translated>
-         </PhrasebookElement>
-          <PhrasebookElement>
-        <Original>Goodbye!</Original>
-        <Translated>Au revoir!</Translated>
-         </PhrasebookElement>
-     
-</PhrasebookElements>
+    </Phrases>
+    <Phrases>
+        <Name>Do you speak English?      Parlez-vous anglais? </Name>
+       
+    </Phrases>
+    <Phrases>
+        <Name>How are you? Comment allez-vous?</Name>
+    </Phrases>
+    <Phrases>
+        <Name>Where is…?        Où est…?</Name>
+    </Phrases>
+    <Phrases>
+        <Name>How much does it cost?    Combien ça coûte?</Name>
+    </Phrases>
+    <Phrases>
+        <Name>Thank you very much!      Merci beaucoup !</Name>
+    </Phrases>
+    <Phrases>
+        <Name>Goodbye    Au revoir?</Name>
+    </Phrases>
+    <Phrases>
+        <Name>Good Night</Name>
+    </Phrases>
+</ArrayOfPhrases>

@@ -4,6 +4,7 @@ namespace ObjectivoF
 {
     public partial class App : Application
     {
+		public static string UserId = "";
         public App()
         {
             InitializeComponent();

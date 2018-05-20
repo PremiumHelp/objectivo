@@ -25,5 +25,7 @@
         </Picker>
         <Entry   Placeholder="Translated text will be here.." Text="{Binding Translated}"></Entry>
 
+        <Button Text="Save" Command="{Binding OnSavedButton}" />
+
       </StackLayout>
 </ContentPage>

@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ObjectivoF.TabbedPages.About" Title="About" Icon="aboutus.png">
-	<StackLayout>
-        <Image Source="circle512.png" Margin="120,0,100,400" />
-         
-            
-  <Label Text="My Voice Contribution" Margin="20,20,100,400" />
-         <Label Text="My Comments" Margin="12,0,1,400" />
-         <Label Text="Notification" Margin="12,0,100,400" />
-        <Label Text="Settings"  />
-  </StackLayout>
+
+
+    <StackLayout HorizontalOptions="Fill" Padding="0,250,0,0">
+
+        <StackLayout>
+      <Image Source="arrow.png" WidthRequest="10" Margin="280,0,0,0" ></Image>
+  <Label Text="My Articles" FontFamily="Avenir" Margin="4,-21" />
+            </StackLayout>
+         <Image Source="arrow.png" WidthRequest="10" Margin="280,20,0,0" ></Image>
+
+        <Label Text=" My Comments" Margin="0, -22,0,70" FontFamily="Avenir"  />
+        <Image Source="arrow.png" WidthRequest="10" Margin="280,20,0,0" ></Image>
+
+        <Label Text="Notifications" FontFamily="Avenir" Margin="5,-22,0,0" />
+         <Image Source="arrow.png" WidthRequest="10" Margin="280,20,0,0" ></Image>
+  <Label Text="Settings" FontFamily="Avenir" Margin="5,-22" />
+         <Image Source="arrow.png" WidthRequest="10" Margin="280,50,0,0" ></Image>
+  <Label Text="About" FontFamily="Avenir" Margin="5,-27,0,0" />
+          
+</StackLayout>
         
 
 </ContentPage>

@@ -6,17 +6,17 @@
     <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand" >
                 
     <StackLayout Orientation="Vertical"  HorizontalOptions="Start" >
-        <Button Text="Spanish" FontSize="25" TextColor="Black"  FontFamily="avenir" WidthRequest="100" HeightRequest="59" Clicked="Spanish"  />
+        <Button Text="Spanish" FontSize="18" TextColor="Black"  FontFamily="avenir" WidthRequest="100" HeightRequest="59" Clicked="Spanish"  />
     </StackLayout>
     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
-        <Image Source="spain.png" WidthRequest="150" HeightRequest="55"/>
+        <Image Source="spainn.png" WidthRequest="150" HeightRequest="55"/>
     </StackLayout>
 </StackLayout>
 
          <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand" >
                 
     <StackLayout Orientation="Vertical"  HorizontalOptions="Start" >
-        <Button Text="German" FontSize="25" FontFamily="avenir" TextColor="Black" WidthRequest="100" HeightRequest="59" Clicked="German"/>
+        <Button Text="German" FontSize="18" FontFamily="avenir" TextColor="Black" WidthRequest="100" HeightRequest="59" Clicked="German"/>
     </StackLayout>
     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
         <Image Source="german.png" WidthRequest="150" HeightRequest="55"/>
@@ -27,7 +27,7 @@
          <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand" >
                 
     <StackLayout Orientation="Vertical"  HorizontalOptions="Start" >
-        <Button Text="Italian" FontSize="25" FontFamily="avenir" TextColor="Black" WidthRequest="100" HeightRequest="59"  Clicked="Italian"  />
+        <Button Text="Italian" FontSize="18" FontFamily="avenir" TextColor="Black" WidthRequest="100" HeightRequest="59"  Clicked="Italian"  />
     </StackLayout>
     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
         <Image Source="italy.png" WidthRequest="150" HeightRequest="55"/>
@@ -39,7 +39,7 @@
          <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand" >
                 
     <StackLayout Orientation="Vertical"  HorizontalOptions="Start" >
-        <Button Text="French" FontSize="25" FontFamily="avenir" TextColor="Black" WidthRequest="100" HeightRequest="59" Clicked="French"/>
+        <Button Text="French" FontSize="18" FontFamily="avenir" TextColor="Black" WidthRequest="100" HeightRequest="59" Clicked="French"/>
     </StackLayout>
     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
         <Image  Source="french.png" WidthRequest="150" HeightRequest="55"/>

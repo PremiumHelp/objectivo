@@ -20,15 +20,10 @@ namespace ObjectivoF.TabbedPages
             await Navigation.PushAsync(new ObjectTranslation());
         }
 
-        async void PhraseBook(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new PhraseBook());
-        }
-
-        async void WordTranslation(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new WordTranslation());
-        }
+		async void PhraseBook(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new PhraseBook());
+		}
 
     }
 }

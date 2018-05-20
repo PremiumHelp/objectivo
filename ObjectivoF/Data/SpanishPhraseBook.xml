@@ -1,33 +1,33 @@
-﻿\<?xml version="1.0" encoding="UTF-8" ?>
-<root>
-    <PhrasebookElement>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ArrayOfPhrases xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Phrases>
+        <Name>Hello, please…!       Hola porfavor!</Name>
 
-          <Original></Original>
-        <Translated></Translated>
+    </Phrases>>
+    <Phrases>
+        <Name>Yes/No   Si/No</Name>
 
-        <Original></Original>
-        <Translated></Translated>
-
-         <Original></Original>
-        <Translated></Translated>
-
-         <Original></Original>
-        <Translated></Translated>
-
-         <Original></Original>
-        <Translated></Translated>
-
-         <Original></Original>
-        <Translated></Translated>
-
-        <Original></Original>
-        <Translated></Translated>
-
-
-        <Original></Original>
-        <Translated></Translated>
-           
-        
-    </PhrasebookElement>
-
-</root>
+    </Phrases>
+    <Phrases>
+        <Name>Do you speak English?    Habla usted Inglés? </Name>
+       
+    </Phrases>
+    <Phrases>
+        <Name>How are you? Cómo estás?</Name>
+    </Phrases>
+    <Phrases>
+        <Name>Where is…?    Dónde está…? </Name>
+    </Phrases>
+    <Phrases>
+        <Name>How much does it cost?   Cuanto cuesta?</Name>
+    </Phrases>
+    <Phrases>
+        <Name>Thank you very much!     Muchas gracias!</Name>
+    </Phrases>
+    <Phrases>
+        <Name>Goodbye    Adios</Name>
+    </Phrases>
+    <Phrases>
+        <Name>Good Night  Buenas noches?</Name>
+    </Phrases>
+</ArrayOfPhrases> 

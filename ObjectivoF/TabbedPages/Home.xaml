@@ -3,12 +3,12 @@
 
 
         
-    <StackLayout  Orientation="Vertical" VerticalOptions="StartAndExpand" Padding="0" Spacing="70" Margin="70">
+    <StackLayout  Orientation="Vertical" VerticalOptions="StartAndExpand" Padding="0" Spacing="130" Margin="70">
             
     <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand" >
                 
     <StackLayout Orientation="Vertical"  HorizontalOptions="Start" >
-        <Image Source="locka.png" WidthRequest="30" HeightRequest="30"/>
+        <Image Source="locka.png" WidthRequest="50" HeightRequest="40"/>
     </StackLayout>
     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
         <Button Text="Voice Translation" Clicked="VoiceTranslation" TextColor="Black" FontFamily="Avenir"  FontSize="18"/>
@@ -17,7 +17,7 @@
 
         <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
-        <Image Source="object.png" WidthRequest="35" HeightRequest="35"/>
+        <Image Source="object.png" WidthRequest="35" HeightRequest="40"/>
     </StackLayout>
     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
         <Button Text="Object Translation" Clicked="ObjectTranslation" TextColor="Black" FontFamily="Avenir" FontSize="18"/>
@@ -26,21 +26,14 @@
 
         <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
-        <Image Source="phrase.png" WidthRequest="30" HeightRequest="30"/>
+        <Image Source="phrase.png" WidthRequest="0" HeightRequest="40" />
     </StackLayout>
     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
         <Button Text="Phrase Book" Clicked="PhraseBook" TextColor="Black" FontFamily="Avenir" FontSize="18"/>
     </StackLayout>
 </StackLayout>
 
-        <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
-    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
-        <Image Source="word.png" WidthRequest="30" HeightRequest="30"/>
-    </StackLayout>
-    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
-        <Button Text="Word Translation" Clicked="WordTranslation" TextColor="Black" FontFamily="Avenir" FontSize="18"/>
-    </StackLayout>
-</StackLayout>
+    
 
 </StackLayout>
 

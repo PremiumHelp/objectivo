@@ -4,13 +4,13 @@
     <StackLayout VerticalOptions="Center" Orientation="Vertical" Padding="30" Spacing="20" Margin="10"    >
         
             <Label Text="Email" TextColor="Gray" FontAttributes="Bold" FontFamily="Avenir"  />
-            <Entry  Placeholder="username" TextColor="Gray" FontFamily="Avenir" Text="{Binding email}" />
+            <Entry x:Name="EmailEntry" Placeholder="username" TextColor="Gray" FontFamily="Avenir" Text="{Binding email}" />
 
             <Label Text="Password" TextColor="Gray" FontFamily="Avenir" FontAttributes="Bold"/>
-            <Entry  Placeholder="password" FontFamily="Avenir" Text="{Binding password}"/>
+            <Entry x:Name="PasswordEntry" Placeholder="password" IsPassword="true" FontFamily="Avenir" Text="{Binding password}"/>
 
 
-        <Button Text="Login"  TextColor="Purple" FontAttributes="Bold" FontFamily="Avenir"  Clicked="TabControl" />
+        <Button Text="Login"  TextColor="Purple" FontAttributes="Bold" FontFamily="Avenir"  Clicked="Login" />
                 <Button Text="Register"  TextColor="Gray" FontAttributes="Bold" FontFamily="Avenir" Clicked="SignUp" />
 
             <Label  />

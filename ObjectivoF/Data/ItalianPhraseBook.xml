@@ -1,33 +1,33 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<root>
-    <PhrasebookElement>
+<ArrayOfPhrases xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Phrases>
+        <Name>Hello, please…!       Ciao, per favore!</Name>
 
-        <Original></Original>
-        <Translated></Translated>
+    </Phrases>>
+    <Phrases>
+        <Name>Yes/No   Si/No</Name>
 
-        <Original></Original>
-        <Translated></Translated>
-
-         <Original></Original>
-        <Translated></Translated>
-
-         <Original></Original>
-        <Translated></Translated>
-
-         <Original></Original>
-        <Translated></Translated>
-
-         <Original></Original>
-        <Translated></Translated>
-
-        <Original></Original>
-        <Translated></Translated>
-
-
-        <Original></Original>
-        <Translated></Translated>
-           
-        
-    </PhrasebookElement>
-
-</root>
+    </Phrases>
+    <Phrases>
+        <Name>Do you speak English?     Parli inglese? </Name>
+       
+    </Phrases>
+    <Phrases>
+        <Name>How are you? Come stai?</Name>
+    </Phrases>
+    <Phrases>
+        <Name>Where is…?      Dov'è? </Name>
+    </Phrases>
+    <Phrases>
+        <Name>How much does it cost?    Quanto costa?</Name>
+    </Phrases>
+    <Phrases>
+        <Name>Thank you very much!     Grazie mille!</Name>
+    </Phrases>
+    <Phrases>
+        <Name>Goodbye    Addio</Name>
+    </Phrases>
+    <Phrases>
+        <Name>Good Night  Buona notte?</Name>
+    </Phrases>
+</ArrayOfPhrases> 

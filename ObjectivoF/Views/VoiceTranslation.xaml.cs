@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using ObjectivoF.ViewModel;
 
 using Xamarin.Forms;
 
@@ -10,6 +11,8 @@ namespace ObjectivoF
         public VoiceTranslation()
         {
             InitializeComponent();
+            BindingContext = new ViewModelVoice();
+
         }
     }
 }

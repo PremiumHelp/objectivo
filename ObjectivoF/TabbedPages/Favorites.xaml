@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ObjectivoF.TabbedPages.Favorites" Title="Favorites" Icon="bookmarkstar.png">
-
-
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ObjectivoF.TabbedPages.Favorites" Title="Favorites" Icon="bookmarkstar.png"
+             xmlns:local="clr-namespace:ObjectivoF;assembly=ObjectivoF">
+<StackLayout HorizontalOptions="Start">
+<Image Source="voc.png"></Image>
+        <Button Text="Delete All"/>
+            
+      <ListView x:Name="listView"   >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="2,15">
+                         
+                           <Label   HorizontalOptions="Start" Text="{Binding original}" />
+                            <Label   HorizontalOptions="End" Text="{Binding translated}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     
-  
+        
+    </StackLayout>
+
+   
 </ContentPage>

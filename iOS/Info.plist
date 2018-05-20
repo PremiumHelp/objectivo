@@ -41,10 +41,16 @@
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>NSCameraUsageDescription</key>
-	<string>New Entry</string>
+	<string>Used to take a picture</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>New Entry</string>
+	<string>Used to access the library</string>
 	<key>NSAppleMusicUsageDescription</key>
+	<string>Used to access the media</string>
+	<key>CFBundleShortVersionString</key>
+	<string>New Entry</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>New Entry</string>
+	<key>NSMicrophoneUsageDescription</key>
 	<string>New Entry</string>
 	<key>Custom Property</key>
 	<string></string>

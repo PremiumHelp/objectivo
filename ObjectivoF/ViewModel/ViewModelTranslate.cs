@@ -7,14 +7,24 @@ using Xamarin.Forms;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Linq;
+using ObjectivoF.Models;
 
 namespace ObjectivoF.ViewModel
 {
     public class ViewModelTranslate : ViewModelBase
-    {
+	{
+		private const string path = "/vocab/";
+        public string Id { get; set; }
+
+		private List<Vocab> vocabs = new List<Vocab>();
+		
+        public ICommand OnTranslateButtonClickedCommand { get; set; }
+		public ICommand OnSavedButton { get; set; }
+
         public List<PickerChoice> LanguageList { get; set; }
 
-        public ICommand OnTranslateButtonClickedCommand { get; set; }
+    
+
         TextTranslationService textTranslationService;
 
         private string translated;
@@ -25,6 +35,8 @@ namespace ObjectivoF.ViewModel
             set => SetProperty(ref translated,value);
              }
         private string toBeTranslated;
+
+
         public string ToBeTranslated
         {
             get => toBeTranslated;
@@ -36,13 +48,24 @@ namespace ObjectivoF.ViewModel
             textTranslationService = new TextTranslationService(new AuthenticationService(Constants.TextTranslatorApiKey));
             OnTranslateButtonClickedCommand = new Command(Translate);
             LanguageList = GetLanguage().OrderBy(t => t.Value).ToList();
-           
+			OnSavedButton = new Command(Save);
+
           
         }
+		private async void Save(){
+			
+			Vocab newVocab = new Vocab();
+			newVocab.Original = toBeTranslated;
+			newVocab.Translated = translated;
+			newVocab.UserId = App.UserId;
+            
+			var response = await HttpService.SaveVocab(Constants.uri + path,newVocab);
+
+		}
 
         private async void  Translate()
        {
-
+          
                 if (!string.IsNullOrWhiteSpace(toBeTranslated))
                 {
                     Translated = await textTranslationService.TranslateTextAsync(toBeTranslated);
