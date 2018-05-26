@@ -13,7 +13,10 @@ namespace ObjectivoF.Services
         Timer accessTokenRenewer;
         const int RefreshTokenDuration = 9;
         HttpClient httpClient;
-
+        /// <summary>
+        /// Initializes a new instance of the <see cref="T:ObjectivoF.Services.AuthenticationService"/> class.
+        /// </summary>
+        /// <param name="apiKey">API key.</param>
         // generating a token for each subscribtion key
         public AuthenticationService(string apiKey)
         {
@@ -21,7 +24,10 @@ namespace ObjectivoF.Services
             httpClient = new HttpClient();
             httpClient.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", apiKey);
         }
-
+      
+   
+        /// </summary>
+        /// <returns>The async.</returns>
         public async Task InitializeAsync()
         {
             //the returned token has an expiration time 
@@ -33,7 +39,10 @@ namespace ObjectivoF.Services
         {
             return token;
         }
-
+        /// <summary>
+        /// Renews the access token.
+        /// </summary>
+        /// <returns>The access token.</returns>
         async Task RenewAccessToken()
         {
             token = await FetchTokenAsync(Constants.AuthenticationTokenEndpoint);
@@ -62,7 +71,11 @@ namespace ObjectivoF.Services
                 }
             }
         }
-      
+      /// <summary>
+      /// Fetchs the token async.
+      /// </summary>
+      /// <returns>The token async.</returns>
+      /// <param name="fetchUri">Fetch URI.</param>
         async Task<string> FetchTokenAsync(string fetchUri)
         {
             UriBuilder uriBuilder = new UriBuilder(fetchUri);

@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ObjectivoF.TabbedPages.Favorites" Title="Favorites" Icon="bookmarkstar.png"
              >
-<StackLayout HorizontalOptions="Start">
-<Image Source="voc.png"></Image>
-        <Button Text="Delete All"/>
+<StackLayout HorizontalOptions="Start" >
+<Image Source="voc.png" WidthRequest="250" HeightRequest="200" Margin="20,20,0,0"></Image>
+        <Button Text="Delete All"  TextColor="Black" FontFamily="Avenir" Command="{Binding DeleteCommand}"/>
             
-      <ListView x:Name="listView" ItemsSource="{Binding  vocabs}"   >
+      <ListView x:Name="listView" ItemsSource="{Binding  vocabs}" Margin="20,0,0,0" >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout Orientation="Horizontal" Padding="2,15">
+                        <StackLayout Orientation="Horizontal" Padding="3,9">
                          
-                           <Label   HorizontalOptions="Start" Text="{Binding original}" />
-                            <Label   HorizontalOptions="End" Text="{Binding translated}" />
+                          
+                         <Label    Text="{Binding translated}" />
+                         <Label   Text="{Binding original}" />
+                            
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>

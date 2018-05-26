@@ -12,22 +12,40 @@ using ObjectivoF.ViewModel;
 
 namespace ObjectivoF
 {
-	public class ViewModelVocab : ViewModelBase
+    public class ViewModelVocab : ViewModelBase
     {
-		private const string path = "/vocab/";
-		public  ObservableCollection<vocabElement> vocabs{ get; set; }
-         public static ObservableCollection<vocabElement> allFav { get; set; }
-		private List<Vocab> vocabsdb = new List<Vocab>();
+        private const string path = "/vocab/";
+        public static ObservableCollection<vocabElement> allFav { get; set; }
+        private List<vocabElement> vocabsdb = new List<vocabElement>();
 
+        public ICommand DeleteCommand { get; set; }
+
+        private ObservableCollection<vocabElement> _vocabs;
+
+        public ObservableCollection<vocabElement> vocabs
+        {
+            get => _vocabs;
+            set => SetProperty(ref _vocabs, value);
+        }
 
         public ViewModelVocab()
         {
-			allFav = new ObservableCollection<vocabElement>();
-			//vocabs = allFav;
-			Task.Run(async () => { await getVocabs(); });
+            DeleteCommand = new Command(DeleteAll);
+            Task.Run(async () => { await getVocabs(); }).ContinueWith((arg) => {
+
+                allFav = new ObservableCollection<vocabElement>(vocabsdb);
+                vocabs = allFav;
+            });
+
         }
-	
-		private async Task getVocabs()
+        private async void DeleteAll()
+        {
+
+            var response = await HttpService.DeleteAllVocabs(Constants.uri + path + "deleteAll/" + App.UserId);
+            allFav.Clear();
+        }
+
+        private async Task getVocabs()
         {
             try
             {
@@ -42,8 +60,8 @@ namespace ObjectivoF
                     var data = await response.Content.ReadAsStringAsync();
                     var results = JObject.Parse(data);
 
-					vocabsdb = JObject.Parse(data)["vocabs"].ToObject<List<Vocab>>();
-					GetAllPhrases();
+                    vocabsdb = JObject.Parse(data)["vocabs"].ToObject<List<vocabElement>>();
+
                 }
                 else
                 {
@@ -54,23 +72,6 @@ namespace ObjectivoF
             {
                 System.Diagnostics.Debug.WriteLine(ex.Message);
             }
-        }
-
-		private void GetAllPhrases()
-        {
-
-            foreach (var vocab in vocabsdb)
-            {
-				if (vocabs != null)
-				{
-					vocabElement newPhrase = new vocabElement();
-					newPhrase.original = vocab.Original;
-					newPhrase.translated = vocab.Translated;
-					allFav.Add(newPhrase);
-				}
-            }
-			//vocabs = allFav;
-			string a = "Sihana";
         }
 
     }

@@ -189,6 +189,7 @@
     <AndroidResource Include="Resources\drawable\spain.jpg" />
     <AndroidResource Include="Resources\drawable\arrow.png" />
     <AndroidResource Include="Resources\drawable\voc.png" />
+    <AndroidResource Include="Resources\drawable\amra.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />

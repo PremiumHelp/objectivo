@@ -60,6 +60,7 @@ namespace ObjectivoF.ViewModel
 			newVocab.UserId = App.UserId;
             
 			var response = await HttpService.SaveVocab(Constants.uri + path,newVocab);
+			ViewModelVocab.allFav.Add(new vocabElement(newVocab.Original, newVocab.Translated));
 
 		}
 

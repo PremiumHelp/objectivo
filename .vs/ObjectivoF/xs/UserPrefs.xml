@@ -1,16 +1,30 @@
 ﻿<Properties StartupConfiguration="{BC05B089-5F0E-44F0-B215-83018782BBEB}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Main.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ObjectivoF/Services/AuthenticationService.cs">
     <Files>
-      <File FileName="ObjectivoF/TabbedPages/Favorites.xaml" Line="8" Column="50" />
-      <File FileName="ObjectivoF/TabbedPages/Favorites.xaml.cs" Line="18" Column="26" />
-      <File FileName="ObjectivoF/ViewModel/ViewModelVocab.cs" Line="69" Column="6" />
-      <File FileName="ObjectivoF/App.xaml.cs" Line="8" Column="1" />
-      <File FileName="ObjectivoF/ViewModel/ViewModelObject.cs" Line="62" Column="69" />
-      <File FileName="ObjectivoF/MainPages/SignUp.xaml" Line="1" Column="21" />
-      <File FileName="ObjectivoF/MainPages/SignUp.xaml.cs" Line="66" Column="57" />
-      <File FileName="ObjectivoF/Models/Vocab.cs" Line="17" Column="1" />
-      <File FileName="ObjectivoF/Models/vocabElement.cs" Line="25" Column="10" />
-      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="ObjectivoF/Services/AuthenticationService.cs" Line="22" Column="10" />
+      <File FileName="ObjectivoF/Services/HttpService.cs" Line="90" Column="7" />
+      <File FileName="ObjectivoF/Services/CheckEntryService.cs" Line="35" Column="13" />
+      <File FileName="ObjectivoF/ViewModel/ViewModelBase.cs" Line="14" Column="13" />
+      <File FileName="ObjectivoF/ViewModel/ViewModelObject.cs" Line="129" Column="4" />
+      <File FileName="ObjectivoF/ViewModel/ViewModelTranslate.cs" Line="69" Column="3" />
+      <File FileName="ObjectivoF/ViewModel/ViewModelVocab.cs" Line="48" Column="13" />
+      <File FileName="ObjectivoF/ViewModel/ViewModelVoice.cs" Line="43" Column="13" />
+      <File FileName="ObjectivoF/Views/French.xaml" Line="8" Column="1" />
+      <File FileName="ObjectivoF/Views/French.xaml.cs" Line="44" Column="15" />
+      <File FileName="ObjectivoF/TabbedPages/Favorites.xaml" Line="28" Column="15" />
+      <File FileName="ObjectivoF/Services/TextTranslationService.cs" Line="46" Column="45" />
+      <File FileName="ObjectivoF/MainPages/ObjectivoFPage.xaml" Line="21" Column="1" />
+      <File FileName="ObjectivoF/MainPages/SignUp.xaml" Line="26" Column="1" />
+      <File FileName="ObjectivoF/MainPages/ObjectivoFPage.xaml.cs" Line="31" Column="13" />
+      <File FileName="ObjectivoF/MainPages/SignUp.xaml.cs" Line="68" Column="9" />
+      <File FileName="ObjectivoF/Models/User.cs" Line="1" Column="1" />
+      <File FileName="ObjectivoF/Models/Vocab.cs" Line="1" Column="1" />
+      <File FileName="ObjectivoF/Models/vocabElement.cs" Line="19" Column="10" />
+      <File FileName="ObjectivoF/Models/VoiceResult.cs" Line="1" Column="1" />
+      <File FileName="ObjectivoF/Services/VoiceTranslationService.cs" Line="11" Column="33" />
+      <File FileName="ObjectivoF/Services/IVoiceTranslationService.cs" Line="1" Column="1" />
+      <File FileName="ObjectivoF/Services/IAuthenticationService.cs" Line="1" Column="1" />
+      <File FileName="ObjectivoF/Services/IAudioRecorderService.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

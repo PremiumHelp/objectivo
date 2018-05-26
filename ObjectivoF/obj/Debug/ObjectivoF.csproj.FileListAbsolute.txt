@@ -119,4 +119,3 @@
 /Users/amrafeta/Desktop/ObjectivoF/objectivo/ObjectivoF/obj/Debug/ObjectivoF.csproj.CoreCompileInputs.cache
 /Users/amrafeta/Desktop/ObjectivoF/objectivo/ObjectivoF/obj/Debug/ObjectivoF.dll
 /Users/amrafeta/Desktop/ObjectivoF/objectivo/ObjectivoF/obj/Debug/ObjectivoF.pdb
-/Users/amrafeta/Desktop/ObjectivoF/objectivo/ObjectivoF/obj/Debug/ObjectivoF.csprojResolveAssemblyReference.cache

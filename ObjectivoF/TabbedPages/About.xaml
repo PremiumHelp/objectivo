@@ -2,38 +2,25 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ObjectivoF.TabbedPages.About" Title="About" Icon="aboutus.png" >
 
 
-    <StackLayout HorizontalOptions="Fill" Padding="0,100,0,0">
+    <StackLayout HorizontalOptions="Fill" Padding="0,60,0,0">
 
+        <Image Source="amra.jpg" WidthRequest="100" HeightRequest="150"></Image>
+            
         <StackLayout>
-                   <Label Text="Profile Settings" FontAttributes="Bold"  Margin="4,16,0,15"></Label>
+                   <Label Text="Amra Feta" FontAttributes="Bold"  Margin="140,16,0,15"></Label>
 
-      <Image Source="arrow.png" WidthRequest="10" Margin="280,0,0,0"  ></Image>
-
-            <Label Text="Theme" FontFamily="Avenir" Margin="4,-21" />
+    
+          
             </StackLayout>
         
          
-
-      
-            
-        <Label Text=" Notification" Margin="0, 30,0,70" FontFamily="Avenir"  />
-
-        <Switch Margin="300,-100,0,0" IsToggled="{Binding RememberLastUser} "></Switch>
+     <Label Text="About me " FontAttributes="Bold" Margin="5,16,0,15"></Label>
 
        
-         <Label Text="Account" FontAttributes="Bold" Margin="5,16,0,15"></Label>
+        <Label Text="This Project is the Project for the Project Laboratory under the supervision of Professor Albert Istvan. " FontFamily="Avenir" Margin="5,0,0,0" />
 
-        <Image Source="arrow.png" WidthRequest="10" Margin="280,30,0,0"  ></Image>
+           <Label HorizontalOptions="Center" Text="Developed by Amra Feta 2018 ©" FontFamily="Avenir" Margin="5,160,0,0" />
 
-        <Label Text="Authentication" FontFamily="Avenir" Margin="5,-30,0,0" />
-         <Image Source="arrow.png" WidthRequest="10" Margin="280,20,0,0" ></Image>
-  <Label Text="Mobile data use" FontFamily="Avenir" Margin="5,-33" />
-         <Image Source="arrow.png" WidthRequest="10" Margin="280,60,0,0" ></Image>
-  <Label Text="Language" FontFamily="Avenir" Margin="5,-28,0,0" />
-
-        <Label Text="Support" Margin="7,40" FontAttributes="Bold"></Label>
-                <Label Text="Call us" Margin="7,0" FontFamily="Avenir" ></Label>
-               <Label Text="Feedback" Margin="7,0" FontFamily="Avenir" ></Label>
 
         
 </StackLayout>

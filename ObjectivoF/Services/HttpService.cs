@@ -56,7 +56,6 @@ namespace ObjectivoF
             request.Content = content;
             System.Diagnostics.Debug.WriteLine(content);
 
-            //TODO don't crahs if there is an error
             return await httpClient.SendAsync(request);
         }
 		public static async Task<HttpResponseMessage> GetAllVocab(string uri)
@@ -66,6 +65,13 @@ namespace ObjectivoF
             request.Method = HttpMethod.Get;
             var response = await httpClient.SendAsync(request);
             return response;
+        }
+		public static async Task<HttpResponseMessage> DeleteAllVocabs(string uri)
+        {
+            var request = new HttpRequestMessage();
+            request.RequestUri = new Uri(uri);
+            request.Method = HttpMethod.Delete;
+            return await httpClient.SendAsync(request);
         }
     }
 }
