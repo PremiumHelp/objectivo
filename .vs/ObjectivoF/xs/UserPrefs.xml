@@ -1,40 +1,28 @@
 ﻿<Properties StartupConfiguration="{BC05B089-5F0E-44F0-B215-83018782BBEB}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ObjectivoF/Services/AuthenticationService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Main.cs">
     <Files>
-      <File FileName="ObjectivoF/Services/AuthenticationService.cs" Line="22" Column="10" />
-      <File FileName="ObjectivoF/Services/HttpService.cs" Line="90" Column="7" />
-      <File FileName="ObjectivoF/Services/CheckEntryService.cs" Line="35" Column="13" />
-      <File FileName="ObjectivoF/ViewModel/ViewModelBase.cs" Line="14" Column="13" />
-      <File FileName="ObjectivoF/ViewModel/ViewModelObject.cs" Line="129" Column="4" />
-      <File FileName="ObjectivoF/ViewModel/ViewModelTranslate.cs" Line="69" Column="3" />
-      <File FileName="ObjectivoF/ViewModel/ViewModelVocab.cs" Line="48" Column="13" />
-      <File FileName="ObjectivoF/ViewModel/ViewModelVoice.cs" Line="43" Column="13" />
-      <File FileName="ObjectivoF/Views/French.xaml" Line="8" Column="1" />
-      <File FileName="ObjectivoF/Views/French.xaml.cs" Line="44" Column="15" />
-      <File FileName="ObjectivoF/TabbedPages/Favorites.xaml" Line="28" Column="15" />
-      <File FileName="ObjectivoF/Services/TextTranslationService.cs" Line="46" Column="45" />
-      <File FileName="ObjectivoF/MainPages/ObjectivoFPage.xaml" Line="21" Column="1" />
+      <File FileName="ObjectivoF/MainPages/SignUp.xaml.cs" Line="27" Column="10" />
       <File FileName="ObjectivoF/MainPages/SignUp.xaml" Line="26" Column="1" />
-      <File FileName="ObjectivoF/MainPages/ObjectivoFPage.xaml.cs" Line="31" Column="13" />
-      <File FileName="ObjectivoF/MainPages/SignUp.xaml.cs" Line="68" Column="9" />
-      <File FileName="ObjectivoF/Models/User.cs" Line="1" Column="1" />
-      <File FileName="ObjectivoF/Models/Vocab.cs" Line="1" Column="1" />
-      <File FileName="ObjectivoF/Models/vocabElement.cs" Line="19" Column="10" />
-      <File FileName="ObjectivoF/Models/VoiceResult.cs" Line="1" Column="1" />
-      <File FileName="ObjectivoF/Services/VoiceTranslationService.cs" Line="11" Column="33" />
-      <File FileName="ObjectivoF/Services/IVoiceTranslationService.cs" Line="1" Column="1" />
-      <File FileName="ObjectivoF/Services/IAuthenticationService.cs" Line="1" Column="1" />
-      <File FileName="ObjectivoF/Services/IAudioRecorderService.cs" Line="1" Column="1" />
+      <File FileName="ObjectivoF/Constants.cs" Line="24" Column="1" />
+      <File FileName="ObjectivoF/TabbedPages/Home.xaml" Line="54" Column="1" />
+      <File FileName="ObjectivoF/FacebookLoginButton.cs" Line="4" Column="1" />
+      <File FileName="ObjectivoF/Models/LoginViewModel.cs" Line="5" Column="28" />
+      <File FileName="ObjectivoF/MainPages/StartPage.xaml" Line="12" Column="15" />
+      <File FileName="ObjectivoF/MainPages/ObjectivoFPage.xaml" Line="8" Column="9" />
+      <File FileName="iOS/Renderers/FacebookLoginButtonRenderer.cs" Line="55" Column="11" />
+      <File FileName="iOS/Info.plist" />
+      <File FileName="iOS/AppDelegate.cs" Line="27" Column="2" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.ObjectivoF.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus_5X_API_27" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/amrafeta/Desktop/ObjectivoF/objectivo/ObjectivoF/ViewModel/TestViewModel.cs" relfile="ObjectivoF/ViewModel/TestViewModel.cs" line="19" column="1" />
+      <Breakpoint file="/Users/amrafeta/Desktop/objectivo/ObjectivoF/ViewModel/TestViewModel.cs" relfile="ObjectivoF/ViewModel/TestViewModel.cs" line="19" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.ObjectivoF.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.BDEC50E2-9439-4E8F-9029-62CA66BECDF7" automaticSigning="False" />
+  <MonoDevelop.Ide.ItemProperties.ObjectivoF.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.D72A2D6D-E9A4-4632-8CEB-6BFE6EB8DCEB" automaticSigning="False" />
 </Properties>

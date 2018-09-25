@@ -163,6 +163,8 @@
     <Compile Include="Models\Vocab.cs" />
     <Compile Include="ViewModel\ViewModelVocab.cs" />
     <Compile Include="Models\vocabElement.cs" />
+    <Compile Include="FacebookLoginButton.cs" />
+    <Compile Include="Models\LoginViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">

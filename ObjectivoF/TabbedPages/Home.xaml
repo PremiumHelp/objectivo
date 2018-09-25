@@ -31,6 +31,16 @@
     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
         <Button Text="Phrase Book" Clicked="PhraseBook" TextColor="Black" FontFamily="Avenir" FontSize="18"/>
     </StackLayout>
+            
+</StackLayout>
+     
+        <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+        <Image Source="game.png" WidthRequest="35" HeightRequest="40"/>
+    </StackLayout>
+    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+        <Button Text="Games" Clicked="ObjectTranslation" TextColor="Black" FontFamily="Avenir" FontSize="18"/>
+    </StackLayout>
 </StackLayout>
 
     
