@@ -24,6 +24,10 @@ namespace ObjectivoF.TabbedPages
 		{
 			await Navigation.PushAsync(new PhraseBook());
 		}
-
+      
+        async void Games(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Games());
+        }
     }
 }

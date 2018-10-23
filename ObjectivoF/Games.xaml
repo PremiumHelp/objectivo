@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ObjectivoF.Games">
+    <ContentPage.Content>
+  <StackLayout  Orientation="Vertical" VerticalOptions="StartAndExpand" Padding="0" Spacing="130" Margin="90,200">
+            
+  
+
+
+       <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+        <Image Source="play.png" WidthRequest="35" HeightRequest="40"/>
+    </StackLayout>
+    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+        <Button Text="Flippo Game" Clicked="Flippo" TextColor="Black" FontFamily="Avenir" FontSize="18"/>
+    </StackLayout>
+</StackLayout>
+
+        <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+        <Image Source="quiz.png" WidthRequest="0" HeightRequest="40" />
+    </StackLayout>
+    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+        <Button Text="Quiz" Clicked="Participate" TextColor="Black" FontFamily="Avenir" FontSize="18"/>
+    </StackLayout>
+            
+</StackLayout>
+     
+    
+    <Button Text="Invite a friend to play" FontAttributes="Bold" BackgroundColor="Green" TextColor="White" FontFamily="Avenir" ></Button>
+    
+
+</StackLayout>
+    
+          
+    </ContentPage.Content>
+</ContentPage>

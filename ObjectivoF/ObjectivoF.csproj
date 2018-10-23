@@ -1,5 +1,5 @@
 ﻿<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\Xamarin.Forms.3.0.0.446417\build\netstandard1.0\Xamarin.Forms.props" Condition="Exists('..\packages\Xamarin.Forms.3.0.0.446417\build\netstandard1.0\Xamarin.Forms.props')" />
+  <Import Project="..\packages\Xamarin.Forms.3.3.0.912540\build\Xamarin.Forms.props" Condition="Exists('..\packages\Xamarin.Forms.3.3.0.912540\build\Xamarin.Forms.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -91,6 +91,26 @@
     <EmbeddedResource Include="Data\ItalianPhraseBook.xml" />
     <EmbeddedResource Include="Data\SpanishPhraseBook.xml" />
     <EmbeddedResource Include="PCLTextResource.txt" />
+    <EmbeddedResource Include="Games.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flippo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Participate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThanksForPlaying.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -165,6 +185,24 @@
     <Compile Include="Models\vocabElement.cs" />
     <Compile Include="FacebookLoginButton.cs" />
     <Compile Include="Models\LoginViewModel.cs" />
+    <Compile Include="Games.xaml.cs">
+      <DependentUpon>Games.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Flippo.xaml.cs">
+      <DependentUpon>Flippo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz.xaml.cs">
+      <DependentUpon>Quiz.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\QuestionViewModel.cs" />
+    <Compile Include="Models\XamarinQuiz.cs" />
+    <Compile Include="Participate.xaml.cs">
+      <DependentUpon>Participate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ThanksForPlaying.xaml.cs">
+      <DependentUpon>ThanksForPlaying.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserScore.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
@@ -200,20 +238,41 @@
     <Reference Include="System.Diagnostics.DiagnosticSource">
       <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.4.1\lib\portable-net45+win8+wpa81\System.Diagnostics.DiagnosticSource.dll</HintPath>
     </Reference>
-    <Reference Include="Xamarin.Forms.Core.Design">
-      <HintPath>..\packages\Xamarin.Forms.3.0.0.446417\lib\netstandard1.0\Design\Xamarin.Forms.Core.Design.dll</HintPath>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net45+win8+wpa81\System.Net.Http.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="Xamarin.Forms.Xaml.Design">
-      <HintPath>..\packages\Xamarin.Forms.3.0.0.446417\lib\netstandard1.0\Design\Xamarin.Forms.Xaml.Design.dll</HintPath>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net45+win8+wpa81\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="PInvoke.Windows.Core">
+      <HintPath>..\packages\PInvoke.Windows.Core.0.3.2\lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\PInvoke.Windows.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="PInvoke.Kernel32">
+      <HintPath>..\packages\PInvoke.Kernel32.0.3.2\lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\PInvoke.Kernel32.dll</HintPath>
+    </Reference>
+    <Reference Include="PInvoke.BCrypt">
+      <HintPath>..\packages\PInvoke.BCrypt.0.3.2\lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\PInvoke.BCrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="PInvoke.NCrypt">
+      <HintPath>..\packages\PInvoke.NCrypt.0.3.2\lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\PInvoke.NCrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="Validation">
+      <HintPath>..\packages\Validation.2.2.8\lib\portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLCrypto">
+      <HintPath>..\packages\PCLCrypto.2.0.147\lib\portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\PCLCrypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.Mobile.Client">
+      <HintPath>..\packages\Microsoft.Azure.Mobile.Client.4.0.2\lib\portable-net45+win8+wp8+wpa81\Microsoft.Azure.Mobile.Client.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Forms.Core">
-      <HintPath>..\packages\Xamarin.Forms.3.0.0.446417\lib\netstandard1.0\Xamarin.Forms.Core.dll</HintPath>
+      <HintPath>..\packages\Xamarin.Forms.3.3.0.912540\lib\netstandard1.0\Xamarin.Forms.Core.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Forms.Platform">
-      <HintPath>..\packages\Xamarin.Forms.3.0.0.446417\lib\netstandard1.0\Xamarin.Forms.Platform.dll</HintPath>
+      <HintPath>..\packages\Xamarin.Forms.3.3.0.912540\lib\netstandard1.0\Xamarin.Forms.Platform.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Forms.Xaml">
-      <HintPath>..\packages\Xamarin.Forms.3.0.0.446417\lib\netstandard1.0\Xamarin.Forms.Xaml.dll</HintPath>
+      <HintPath>..\packages\Xamarin.Forms.3.3.0.912540\lib\netstandard1.0\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -230,5 +289,5 @@
     <Folder Include="MainPages\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
-  <Import Project="..\packages\Xamarin.Forms.3.0.0.446417\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.3.0.0.446417\build\netstandard1.0\Xamarin.Forms.targets')" />
+  <Import Project="..\packages\Xamarin.Forms.3.3.0.912540\build\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.3.3.0.912540\build\Xamarin.Forms.targets')" />
 </Project>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ObjectivoF.Quiz"
+             xmlns:models="clr-namespace:ObjectivoF;assembly=ObjectivoF">
+     <ContentPage.BindingContext>
+        <models:QuestionViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <StackLayout x:Name="slQuestion" IsVisible="true">
+                <Label x:Name="lblQuestion"
+                       FontAttributes="Bold"
+                       FontSize="Large"
+                       HorizontalTextAlignment="Center"
+                       Text="{Binding Question}" />
+                <Button x:Name="btnAnswerOne" Text="{Binding Answer1}" 
+                    IsEnabled="{Binding Answer1Enabled}" />
+                <Button x:Name="btnAnswerTwo" Text="{Binding Answer2}" 
+                    IsEnabled="{Binding Answer2Enabled}" />
+                <Button x:Name="btnAnswerThree" Text="{Binding Answer3}" 
+                    IsEnabled="{Binding Answer3Enabled}" />
+                <Label x:Name="lblMessage"
+                       FontAttributes="Italic"
+                       FontSize="Large"
+                       HorizontalTextAlignment="Center"
+                       Text="{Binding Message}" />
+            </StackLayout>
+
+            <ActivityIndicator x:Name="aiLoading"
+                               IsRunning="{Binding IsLoading}"
+                               IsVisible="{Binding IsLoading}"
+                               Color="Blue" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

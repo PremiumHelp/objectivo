@@ -39,7 +39,7 @@
         <Image Source="game.png" WidthRequest="35" HeightRequest="40"/>
     </StackLayout>
     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
-        <Button Text="Games" Clicked="ObjectTranslation" TextColor="Black" FontFamily="Avenir" FontSize="18"/>
+        <Button Text="Games" Clicked="Games" TextColor="Black" FontFamily="Avenir" FontSize="18"/>
     </StackLayout>
 </StackLayout>
 
