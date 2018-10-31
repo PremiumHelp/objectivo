@@ -12,15 +12,17 @@ namespace ObjectivoF
         public static int Score = 0;
         public static string Username = "";
 
-        private static MobileServiceClient _mobileServiceClient;
+        private static MobileServiceClient mobileServiceClient;
 
         public static MobileServiceClient MobileService
         {
             get
             {
-                if (_mobileServiceClient == null)
-                    _mobileServiceClient = new MobileServiceClient("https://objectivoquiz.azurewebsites.net");
-                return _mobileServiceClient;
+                if (mobileServiceClient == null;
+                   
+                    mobileServiceClient = new MobileServiceClient("https://objectivoquiz.azurewebsites.net");
+              
+                    return mobileServiceClient;
             }
         }
     }

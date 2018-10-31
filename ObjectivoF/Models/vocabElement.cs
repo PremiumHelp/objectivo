@@ -11,8 +11,17 @@ namespace ObjectivoF.Models
 		private string _translated;
         private string _original;
 
-		public string translated { get { return _translated; } set { OnPropertyChanged(); _translated = value; } }
-		public string original { get { return _original; } set { OnPropertyChanged(); _original = value; } }
+		public string translated { 
+            get { return _translated;
+            } 
+            set { OnPropertyChanged(); _translated = value; 
+            } }
+
+		public string original {
+            get { return _original; 
+            }
+            set { OnPropertyChanged(); _original = value; 
+            } }
 
         public vocabElement()
         {

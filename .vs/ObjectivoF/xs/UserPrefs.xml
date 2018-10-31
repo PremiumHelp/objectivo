@@ -1,25 +1,22 @@
 ﻿<Properties StartupConfiguration="{BC05B089-5F0E-44F0-B215-83018782BBEB}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ObjectivoF/MainPages/StartPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ObjectivoF/ViewModel/QuestionViewModel.cs">
     <Files>
+      <File FileName="ObjectivoF/Services/TextTranslationService.cs" Line="71" Column="42" />
+      <File FileName="ObjectivoF/MainPages/ObjectivoFPage.xaml.cs" Line="80" Column="10" />
+      <File FileName="ObjectivoF/ViewModel/ViewModelObject.cs" Line="110" Column="26" />
+      <File FileName="ObjectivoF/ViewModel/ViewModelTranslate.cs" Line="1" Column="1" />
+      <File FileName="ObjectivoF/Views/ObjectTranslation.xaml.cs" Line="1" Column="1" />
+      <File FileName="ObjectivoF/Services/VoiceTranslationService.cs" Line="42" Column="73" />
+      <File FileName="ObjectivoF/Models/VoiceResult.cs" Line="8" Column="18" />
+      <File FileName="ObjectivoF/Models/LoginViewModel.cs" Line="1" Column="1" />
       <File FileName="ObjectivoF/FacebookLoginButton.cs" Line="19" Column="45" />
-      <File FileName="ObjectivoF/Quiz.xaml" Line="36" Column="1" />
-      <File FileName="ObjectivoF/Quiz.xaml.cs" Line="124" Column="1" />
-      <File FileName="ObjectivoF/Games.xaml" Line="31" Column="5" />
-      <File FileName="ObjectivoF/Games.xaml.cs" Line="22" Column="10" />
-      <File FileName="ObjectivoF/App.xaml" Line="7" Column="1" />
-      <File FileName="ObjectivoF/App.xaml.cs" Line="26" Column="43" />
+      <File FileName="iOS/Renderers/FacebookLoginButtonRenderer.cs" Line="1" Column="1" />
+      <File FileName="ObjectivoF/Models/vocabElement.cs" Line="18" Column="16" />
+      <File FileName="ObjectivoF/Data/Phrases.cs" Line="24" Column="2" />
+      <File FileName="ObjectivoF/Models/Vocab.cs" Line="1" Column="1" />
+      <File FileName="ObjectivoF/ViewModel/ViewModelVocab.cs" Line="48" Column="10" />
+      <File FileName="ObjectivoF/Quiz.xaml.cs" Line="1" Column="1" />
       <File FileName="ObjectivoF/ViewModel/QuestionViewModel.cs" Line="13" Column="49" />
-      <File FileName="ObjectivoF/Models/XamarinQuiz.cs" Line="13" Column="1" />
-      <File FileName="ObjectivoF/:Users:amrafeta:Desktop:objectivo:ObjectivoF:SingleQuiz.xaml.cs" Line="35" Column="28" />
-      <File FileName="ObjectivoF/Participate.xaml" Line="13" Column="1" />
-      <File FileName="ObjectivoF/Participate.xaml.cs" Line="25" Column="10" />
-      <File FileName="ObjectivoF/ThanksForPlaying.xaml" Line="21" Column="1" />
-      <File FileName="ObjectivoF/ThanksForPlaying.xaml.cs" Line="36" Column="6" />
-      <File FileName="ObjectivoF/Models/UserScore.cs" Line="11" Column="1" />
-      <File FileName="iOS/Main.cs" Line="21" Column="1" />
-      <File FileName="ObjectivoF/MainPages/SignUp.xaml" Line="26" Column="1" />
-      <File FileName="ObjectivoF/MainPages/StartPage.xaml" Line="12" Column="15" />
-      <File FileName="ObjectivoF/MainPages/StartPage.xaml.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

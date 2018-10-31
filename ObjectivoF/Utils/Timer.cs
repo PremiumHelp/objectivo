@@ -8,7 +8,7 @@ namespace ObjectivoF.Utils
 
     internal sealed class Timer : IDisposable
     {
-        static Task CompletedTask = Task.FromResult(false);
+        static Task TaskComplete = Task.FromResult(false);
 
         TimerCallback callback;
         Task delay;
@@ -81,7 +81,7 @@ namespace ObjectivoF.Utils
                     if (due > 0)
                         delay = Task.Delay(due, tokenSource.Token);
                     else
-                        delay = CompletedTask;
+                        delay = TaskComplete;
                     delay.ContinueWith(t => tick(), tokenSource.Token);
                 };
             }

@@ -11,13 +11,14 @@ namespace ObjectivoF.Services
         string subscriptionKey;
         string token;
         Timer accessTokenRenewer;
-        const int RefreshTokenDuration = 9;
+        const int RefreshTokenDuration = 10;
         HttpClient httpClient;
         /// <summary>
         /// Initializes a new instance of the <see cref="T:ObjectivoF.Services.AuthenticationService"/> class.
         /// </summary>
         /// <param name="apiKey">API key.</param>
-        // generating a token for each subscribtion key
+       
+        // generating a token for each subscription key
         public AuthenticationService(string apiKey)
         {
             subscriptionKey = apiKey;

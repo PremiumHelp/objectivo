@@ -15,8 +15,8 @@ using System.Windows.Input;
 
 namespace ObjectivoF.ViewModel
 {
-    public class ViewModelObject: ViewModelBase
-    {
+        public class ViewModelObject: ViewModelBase
+        {
         public ICommand TakePictureButtonClicked { get; set; }
         public ICommand UploadPictureButtonClicked { get; set; }
 
@@ -67,38 +67,34 @@ namespace ObjectivoF.ViewModel
 
         private async void TakePicture(){
            
-            await CrossMedia.Current.Initialize();
+        await CrossMedia.Current.Initialize();
 
-            if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
-            {
-              
-                return;
-            }
-
-            var file = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
-            {
-                SaveToAlbum = true,
-                Name = "test.jpg"
-            });
+        if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
+       {
+             return;
+       }
+        var file = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
+       {
+         SaveToAlbum = true,
+         Name = "test.jpg"
+        });
 
             if (file == null)
                 return;
             
-
-
             Image1 = ImageSource.FromStream(() => file.GetStream());
             await AnalyzePictureAsync(file.GetStream());
-
         }
-        private async void UploadPicture(){
-           
-            if (!CrossMedia.Current.IsPickPhotoSupported)
-            {
+       
+        private async void UploadPicture()
+        {
+           if (!CrossMedia.Current.IsPickPhotoSupported)
+        {
                 return;
-            }
+        }
 
-            var file = await CrossMedia.Current.PickPhotoAsync();
-            if (file == null)
+           var file = await CrossMedia.Current.PickPhotoAsync();
+           if (file == null)
                 return;
 
            
@@ -110,11 +106,12 @@ namespace ObjectivoF.ViewModel
         }
         private async Task<AnalysisResult> AnalyzePictureAsync(Stream inputFile)
         {
-           
-
-            VisualFeature[] visualFeatures = new VisualFeature[] {
+           VisualFeature[] visualFeatures = new VisualFeature[] 
+        {
+               
                 VisualFeature.Description
-                 };
+                
+        };
 
 
             AnalysisResult analysisResult = await visionClient.AnalyzeImageAsync(inputFile,visualFeatures);
@@ -122,15 +119,15 @@ namespace ObjectivoF.ViewModel
             Description = analysisResult.Description.Captions[0].Text;
            
             if (!string.IsNullOrWhiteSpace(description))
-            {
+        {
                 TranslatedDescription = await textTranslationService.TranslateTextAsync(description);
 
 
-            }
+        }
 
             return analysisResult;
         }
 
      
-    }
+        }
 }
