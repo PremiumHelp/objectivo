@@ -7,8 +7,8 @@
             
     <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand" >
                 
-    <StackLayout Orientation="Vertical"  HorizontalOptions="Start" >
-        <Image Source="locka.png" WidthRequest="50" HeightRequest="40"/>
+    <StackLayout Orientation="Vertical"  HorizontalOptions="Start" Margin="16,3,3,3">
+        <Image Source="locka.png" WidthRequest="50" HeightRequest="35"/>
     </StackLayout>
     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
         <Button Text="Voice Translation" Clicked="VoiceTranslation" TextColor="Black" FontFamily="Avenir"  FontSize="18"/>
@@ -19,7 +19,7 @@
     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
         <Image Source="object.png" WidthRequest="35" HeightRequest="40"/>
     </StackLayout>
-    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand" Margin="2,2,-9,3">
         <Button Text="Object Translation" Clicked="ObjectTranslation" TextColor="Black" FontFamily="Avenir" FontSize="18"/>
     </StackLayout>
 </StackLayout>
@@ -35,10 +35,10 @@
 </StackLayout>
      
         <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
-    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
-        <Image Source="game.png" WidthRequest="35" HeightRequest="40"/>
+    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand" Margin="1,-12,30,0">
+        <Image Source="game.png" WidthRequest="5" HeightRequest="46"/>
     </StackLayout>
-    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand" Margin="1,-9,20,0">
         <Button Text="Games" Clicked="Games" TextColor="Black" FontFamily="Avenir" FontSize="18"/>
     </StackLayout>
 </StackLayout>

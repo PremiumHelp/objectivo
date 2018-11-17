@@ -5,10 +5,10 @@ using Xamarin.Forms;
 
 namespace ObjectivoF
 {
-    public class AppSettings
+    static public class AppSettings
     {
-        public const int QUESTIONS_COUNT = 3;
-        public static int CurrentQuestion = 1;
+        public const int qCount = 3;
+        public static int currentQ = 1;
         public static int Score = 0;
         public static string Username = "";
 
@@ -18,7 +18,7 @@ namespace ObjectivoF
         {
             get
             {
-                if (mobileServiceClient == null;
+                if (mobileServiceClient == null)
                    
                     mobileServiceClient = new MobileServiceClient("https://objectivoquiz.azurewebsites.net");
               
@@ -29,7 +29,6 @@ namespace ObjectivoF
 
     public partial class Quiz : ContentPage
     {
-        // int _choice = 0;
         int score = 100;
 
         public Quiz()
@@ -75,7 +74,7 @@ namespace ObjectivoF
             btnAnswerOne.Clicked += (sender, ea) =>
             {
                 if (((QuestionViewModel)BindingContext).CheckIfCorrect(1)) DoAnswer();
-                else
+                 else
                 {
                     score = score / 2;
                 }
@@ -106,9 +105,10 @@ namespace ObjectivoF
         private void DoAnswer()
         {
             AppSettings.Score += score;
-            if (AppSettings.CurrentQuestion < AppSettings.QUESTIONS_COUNT)
+            if (AppSettings.currentQ < AppSettings.qCount)
             {
-                AppSettings.CurrentQuestion++;
+                AppSettings.currentQ++;
+
                 ((QuestionViewModel)BindingContext).ChooseNewQuestion();
             }
             else

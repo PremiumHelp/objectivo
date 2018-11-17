@@ -3,7 +3,7 @@ namespace ObjectivoF
 {
     public static class Constants
     {
-		public static readonly string uri = "http://192.168.0.100:4200";
+		public static readonly string uri = "http://192.168.0.103:4200";
 
         public static readonly string AuthenticationTokenEndpoint = "https://api.cognitive.microsoft.com/sts/v1.0";
 

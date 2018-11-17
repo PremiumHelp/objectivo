@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:ObjectivoF" x:Class="ObjectivoF.ObjectivoFPage" >
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ObjectivoF" 
+             x:Class="ObjectivoF.ObjectivoFPage" >
 
     <StackLayout VerticalOptions="Center" Orientation="Vertical" Padding="30" Spacing="20" Margin="10"    >
        
@@ -17,11 +20,9 @@
             <Label  />
         <StackLayout Margin="20,20,20,0">
         <Label />
-        <local:FacebookLoginButton
-            OnSuccess="{Binding OnFacebookLoginSuccessCmd}"
-            OnError="{Binding OnFacebookLoginErrorCmd}"
-            OnCancel="{Binding OnFacebookLoginCancelCmd}" />
+      
     </StackLayout>
+       <Button Text="Facebook Login" BackgroundColor="#3b5998" Clicked="FbLogin" TextColor="White"></Button>
         </StackLayout>
        
    

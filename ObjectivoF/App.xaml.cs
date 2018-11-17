@@ -7,10 +7,10 @@ namespace ObjectivoF
 		public static string UserId = "";
         public App()
         {
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("NDI5MjBAMzEzNjJlMzMyZTMwTU1FNjB4N1UxNTFLRjhEOFQvbzAvMnB0NVlGS0NVRThGWUlraFRXWEtOOD0=");
             InitializeComponent();
 
             MainPage = new NavigationPage(new StartPage());
-
         }
 
         protected override void OnStart()

@@ -11,10 +11,10 @@ namespace ObjectivoF
         {
             InitializeComponent();
         }
-                async void Participate(object sender, EventArgs e)         {             await Navigation.PushAsync(new Participate());         }
+                async void Participate(object sender, EventArgs e)         {             await Navigation.PushAsync(new MainGame());         }
         async void Flippo(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Flippo());
+            await Navigation.PushAsync(new FlashCard());
         }
     }
 }

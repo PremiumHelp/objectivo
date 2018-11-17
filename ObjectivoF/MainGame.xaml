@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ObjectivoF.MainGame">
+
+       <StackLayout  Orientation="Vertical" VerticalOptions="StartAndExpand" Padding="0" Spacing="50" Margin="50,160,30,0">
+        <StackLayout Margin="20,-50,0,50">
+      <Image Source="colgreen.png" WidthRequest="50" HeightRequest="135"  ></Image>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+           
+    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand" Margin="1,1,20,1">
+
+             <Image Source="sin.png" WidthRequest="35" HeightRequest="40"/>
+    </StackLayout>
+    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand" Margin="0,0,80,3">
+        <Button BorderColor="Black" BorderRadius="5" BackgroundColor="#115433" Text="Single Player"  TextColor="White" Clicked="Handle_Clicked" FontFamily="Avenir" FontSize="18"/>
+    </StackLayout>
+</StackLayout>
+
+        <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+        <Image Source="mul.png" WidthRequest="0" HeightRequest="40" Margin="0,3,2,4"/>
+    </StackLayout>
+    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand" Margin="1,1,50,1">
+        <Button Text="MultiPlayer" BackgroundColor="#115433"  TextColor="White" FontFamily="Avenir" FontSize="18"/>
+    </StackLayout>
+            
+</StackLayout>
+     
+
+    
+
+</StackLayout>
+
+        
+
+    
+</ContentPage>

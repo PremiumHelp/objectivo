@@ -15,7 +15,7 @@ namespace ObjectivoF
             this.Children.Add(new Home());
             this.Children.Add(new Favorites());
             this.Children.Add(new Translate());
-            this.Children.Add(new About());
+            this.Children.Add(new Views.GroupPage());
         }
    
        

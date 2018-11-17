@@ -148,6 +148,46 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\packages\Xamarin.Forms.3.3.0.912540\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
+    <Reference Include="SuperSocket.ClientEngine">
+      <HintPath>..\packages\SuperSocket.ClientEngine.Core.0.10.0\lib\netstandard1.3\SuperSocket.ClientEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="WebSocket4Net">
+      <HintPath>..\packages\WebSocket4Net.0.15.2\lib\netstandard1.3\WebSocket4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="cloudrail-si-xamarin-ios-sdk">
+      <HintPath>..\packages\Xamarin.Twilio.Api.iOS.1.3.0\lib\Xamarin.iOS10\cloudrail-si-xamarin-ios-sdk.dll</HintPath>
+    </Reference>
+    <Reference Include="Twilio.Chat.iOS">
+      <HintPath>..\packages\Twilio.Chat.Xamarin.0.3.0\lib\Xamarin.iOS\Twilio.Chat.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="Twilio.AspNet.Common">
+      <HintPath>..\packages\Twilio.AspNet.Common.5.20.1\lib\netstandard1.0\Twilio.AspNet.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Rg.Plugins.Popup">
+      <HintPath>..\packages\Rg.Plugins.Popup.1.1.4.168\lib\Xamarin.IOS\Rg.Plugins.Popup.dll</HintPath>
+    </Reference>
+    <Reference Include="Rg.Plugins.Popup.IOS">
+      <HintPath>..\packages\Rg.Plugins.Popup.1.1.4.168\lib\Xamarin.IOS\Rg.Plugins.Popup.IOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Licensing">
+      <HintPath>..\packages\Syncfusion.Licensing.16.3.0.29\lib\Xamarin.iOS10\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfCarousel.iOS">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfCarousel.16.3.0.29\lib\Xamarin.iOS10\Syncfusion.SfCarousel.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfCarousel.XForms">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfCarousel.16.3.0.29\lib\Xamarin.iOS10\Syncfusion.SfCarousel.XForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfCarousel.XForms.iOS">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfCarousel.16.3.0.29\lib\Xamarin.iOS10\Syncfusion.SfCarousel.XForms.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Prism">
+      <HintPath>..\packages\Prism.Core.7.1.0.431\lib\netstandard2.0\Prism.dll</HintPath>
+    </Reference>
+    <Reference Include="Prism.Forms">
+      <HintPath>..\packages\Prism.Forms.7.1.0.431\lib\netstandard2.0\Prism.Forms.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ObjectivoF\ObjectivoF.csproj">
@@ -162,7 +202,6 @@
   <ItemGroup>
     <Folder Include="Resources\" />
     <Folder Include="Services\" />
-    <Folder Include="Renderers\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -176,7 +215,11 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Services\AudioRecorderService.cs" />
-    <Compile Include="Renderers\FacebookLoginButtonRenderer.cs" />
+    <Compile Include="ViewController.cs" />
+    <Compile Include="ViewController.designer.cs">
+      <DependentUpon>ViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FacebookLogin.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\language.png" />
@@ -211,6 +254,66 @@
     <BundleResource Include="Resources\game.png" />
     <BundleResource Include="Resources\play.png" />
     <BundleResource Include="Resources\quiz.png" />
+    <BundleResource Include="Resources\hamburger.png" />
+    <BundleResource Include="Resources\list.png" />
+    <BundleResource Include="Resources\listing.png" />
+    <BundleResource Include="Resources\menu.png" />
+    <BundleResource Include="Resources\menu-2.png" />
+    <BundleResource Include="Resources\mul.png" />
+    <BundleResource Include="Resources\sin.png" />
+    <BundleResource Include="Resources\vocab.png" />
+    <BundleResource Include="Resources\voca.png" />
+    <BundleResource Include="Resources\colgreen.png" />
+    <BundleResource Include="Resources\fc.png" />
+    <BundleResource Include="Resources\bell.png" />
+    <BundleResource Include="Resources\carrots.png" />
+    <BundleResource Include="Resources\corn.png" />
+    <BundleResource Include="Resources\cuc.png" />
+    <BundleResource Include="Resources\egg.png" />
+    <BundleResource Include="Resources\kohl.png" />
+    <BundleResource Include="Resources\peas.png" />
+    <BundleResource Include="Resources\potato.png" />
+    <BundleResource Include="Resources\tomato.png" />
+    <BundleResource Include="Resources\ananas.png" />
+    <BundleResource Include="Resources\apple.png" />
+    <BundleResource Include="Resources\banana.png" />
+    <BundleResource Include="Resources\cherry.png" />
+    <BundleResource Include="Resources\grapes.png" />
+    <BundleResource Include="Resources\kiwi.png" />
+    <BundleResource Include="Resources\lemon.png" />
+    <BundleResource Include="Resources\peach.png" />
+    <BundleResource Include="Resources\plum.png" />
+    <BundleResource Include="Resources\straw.png" />
+    <BundleResource Include="Resources\warm.png" />
+    <BundleResource Include="Resources\ear.png" />
+    <BundleResource Include="Resources\high.png" />
+    <BundleResource Include="Resources\jeans.png" />
+    <BundleResource Include="Resources\neck.png" />
+    <BundleResource Include="Resources\scarf.png" />
+    <BundleResource Include="Resources\shirt.png" />
+    <BundleResource Include="Resources\shoes.png" />
+    <BundleResource Include="Resources\skirt.png" />
+    <BundleResource Include="Resources\sun-2.png" />
+    <BundleResource Include="Resources\swim.png" />
+    <BundleResource Include="Resources\desk.png" />
+    <BundleResource Include="Resources\eraser.png" />
+    <BundleResource Include="Resources\lineal.png" />
+    <BundleResource Include="Resources\pencil.png" />
+    <BundleResource Include="Resources\pen.png" />
+    <BundleResource Include="Resources\sbag.png" />
+    <BundleResource Include="Resources\sharp.png" />
+    <BundleResource Include="Resources\bear.png" />
+    <BundleResource Include="Resources\beee.png" />
+    <BundleResource Include="Resources\bird.png" />
+    <BundleResource Include="Resources\cat.png" />
+    <BundleResource Include="Resources\cow.png" />
+    <BundleResource Include="Resources\dog.png" />
+    <BundleResource Include="Resources\fish.png" />
+    <BundleResource Include="Resources\fox.png" />
+    <BundleResource Include="Resources\horse.png" />
+    <BundleResource Include="Resources\sheep.png" />
+    <BundleResource Include="Resources\turtle.png" />
+    <BundleResource Include="Resources\licon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.3.3.0.912540\build\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.3.3.0.912540\build\Xamarin.Forms.targets')" />

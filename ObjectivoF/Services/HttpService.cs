@@ -42,7 +42,7 @@ namespace ObjectivoF
             request.Content = content;
             System.Diagnostics.Debug.WriteLine(content);
 
-            //TODO don't crahs if there is an error
+
             return await httpClient.SendAsync(request);
         }
 
@@ -71,6 +71,16 @@ namespace ObjectivoF
             var request = new HttpRequestMessage();
             request.RequestUri = new Uri(uri);
             request.Method = HttpMethod.Delete;
+            return await httpClient.SendAsync(request);
+        }
+        public static async Task<HttpResponseMessage> Create(string uri, Game newGame)
+        {
+            string json = JsonConvert.SerializeObject(newGame);
+            var content = new StringContent(json.ToString(), Encoding.UTF8, "application/json");
+            var request = new HttpRequestMessage();
+            request.RequestUri = new Uri(uri);
+            request.Method = HttpMethod.Post;
+            request.Content = content;
             return await httpClient.SendAsync(request);
         }
     }

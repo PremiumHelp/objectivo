@@ -8,10 +8,10 @@
 
        <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
-        <Image Source="play.png" WidthRequest="35" HeightRequest="40"/>
+        <Image Source="fc.png" WidthRequest="35" HeightRequest="40"/>
     </StackLayout>
     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
-        <Button Text="Flippo Game" Clicked="Flippo" TextColor="Black" FontFamily="Avenir" FontSize="18"/>
+        <Button Text="Flashcards" Clicked="Flippo" TextColor="Black" FontFamily="Avenir" FontSize="18"/>
     </StackLayout>
 </StackLayout>
 
@@ -26,7 +26,6 @@
 </StackLayout>
      
     
-    <Button Text="Invite a friend to play" FontAttributes="Bold" BackgroundColor="Green" TextColor="White" FontFamily="Avenir" ></Button>
     
 
 </StackLayout>

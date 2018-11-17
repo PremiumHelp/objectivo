@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ObjectivoF.Views.GroupPage" Title="Chat" Icon="aboutus.png">
+ 
+    <ContentPage.ToolbarItems>
+    <ToolbarItem Text="+" Clicked="Plus_Clicked"/>
+    <ToolbarItem Text="?" Clicked="Info_Clicked"/>
+     <ToolbarItem Icon="licon.png" Clicked="FbLogout"  ></ToolbarItem>
+
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <ListView ItemsSource="{Binding .}" SeparatorVisibility="None"  x:Name="_lstx" RowHeight="90" 
+            IsPullToRefreshEnabled="true"
+            ItemSelected="Handle_ItemSelected"
+            Refreshing="Handle_Refreshing"
+            >
+        <ListView.ItemTemplate>
+        <DataTemplate>
+
+        <ViewCell>
+       
+        <StackLayout BackgroundColor="#BDB5C4" Margin="10">
+        <Label Text="{Binding Name}" TextColor="White" HorizontalOptions="StartAndExpand" VerticalOptions="Start" FontSize="16"/>
+        </StackLayout>
+        </ViewCell>
+
+        </DataTemplate>
+        </ListView.ItemTemplate>
+        </ListView>
+
+    </ContentPage.Content>
+</ContentPage>

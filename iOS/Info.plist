@@ -59,14 +59,14 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb459001974621517</string>
+				<string>fb190608188482402</string>
 			</array>
 		</dict>
 	</array>
 	<key>FacebookAppID</key>
-	<string>459001974621517</string>
+	<string>190608188482402</string>
 	<key>FacebookDisplayName</key>
-	<string>Xamarin-Auth</string>
+	<string>XamarinTest</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>

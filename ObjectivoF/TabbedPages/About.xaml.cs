@@ -10,6 +10,8 @@ namespace ObjectivoF.TabbedPages
         public About()
         {
             InitializeComponent();
+
+
         }
     }
 }

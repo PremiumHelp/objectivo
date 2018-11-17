@@ -1,8 +1,15 @@
-﻿using Xamarin.Forms;
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+using System.IO;
 using System.Net;
 using Newtonsoft.Json.Linq;
-using ObjectivoF.Services;
+#if __ANDROID__
+using Newtonsoft.Json;
+#endif
 
 namespace ObjectivoF
 {
@@ -10,14 +17,16 @@ namespace ObjectivoF
     {
 		private const string path = "/user/";
         public string email { get; set; }
-        public string password { get; set; }
+        public string password { get; set; }       
+        
 
-        public ObjectivoFPage()
+       
+         public ObjectivoFPage()
         {
+           
             InitializeComponent();
             BindingContext = this;
         }
-	
 
 
         async void SignUp(object sender, EventArgs e)
@@ -25,8 +34,8 @@ namespace ObjectivoF
 			await Navigation.PushAsync(new SignUp());
         }
 
-     
 
+     
 
 
         async void Login(object sender, EventArgs e)
@@ -83,5 +92,27 @@ namespace ObjectivoF
             DisplayAlert("Alert", message, "OK");
         }
 
+
+        private async void FbLogin(object sender, EventArgs e)
+        {
+
+            var result = await DependencyService.Get<IFacebookLogin>().SignIn();
+            if (result.Status == FBStatus.Success)
+            {
+
+
+                await Navigation.PushAsync(new TabControl());
+
+            }
+            else
+            {
+                await DisplayAlert("Error", result.Message, "Ok");
+            }
+
+        }
+       
+        }
     }
-}
+
+
+

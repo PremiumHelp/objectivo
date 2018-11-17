@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ObjectivoF.FlashCard">
+    <ContentPage.Content>
+       
+        <StackLayout >
+            <Label Text="Choose a category to learn:" Margin="9,140,
+            0,0" HorizontalOptions="Center"  TextColor="Purple" Font="Avenir" FontAttributes="Bold" VerticalOptions="Center"></Label>
+    <StackLayout Margin="0,50,190,10">
+          <Button Text="Fruits" TextColor="Black" FontAttributes="Bold" Margin="2,2,40,2" Clicked="Handle_Clicked"></Button>
+          <Button Text="Vegetables"  TextColor="Black" FontAttributes="Bold" Clicked="Handle_Clicked_1"></Button>
+          <Button Text="Clothes"  TextColor="Black" FontAttributes="Bold"  Margin="2,2,28,0" Clicked="Handle_Clicked_2"></Button>
+          <Button Text="School"  TextColor="Black" FontAttributes="Bold"  Margin="0,0,30,0" Clicked="Handle_Clicked_3"></Button>
+                      <Button Text="Animals"  TextColor="Black" FontAttributes="Bold"  Margin="0,0,22,0" Clicked="Handle_Clicked_4"></Button>
+
+          </StackLayout>     
+        
+    </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

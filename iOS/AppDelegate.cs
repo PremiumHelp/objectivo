@@ -4,7 +4,7 @@ using System.Linq;
 using Facebook.CoreKit;
 using Foundation;
 using UIKit;
-
+using Syncfusion.SfCarousel.XForms.iOS;
 namespace ObjectivoF.iOS
 {
     [Register("AppDelegate")]
@@ -13,6 +13,8 @@ namespace ObjectivoF.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            Rg.Plugins.Popup.Popup.Init();
+            new SfCarouselRenderer();
 
             LoadApplication(new App());
 
