@@ -30,7 +30,7 @@ namespace ObjectivoF
         public void Cancel(object sender, EventArgs args)
         {
 
-            Application.Current.MainPage = new TabbedPages.Home();
+            Navigation.PopToRootAsync();
         }
 
     }

@@ -242,14 +242,12 @@
     <BundleResource Include="Resources\france.jpg" />
     <BundleResource Include="Resources\german.jpg" />
     <BundleResource Include="Resources\circle512.png" />
-    <BundleResource Include="Resources\test.jpg" />
     <BundleResource Include="Resources\recording.png" />
     <BundleResource Include="Resources\record.png" />
     <BundleResource Include="Resources\italian.jpg" />
     <BundleResource Include="Resources\spain.jpg" />
     <BundleResource Include="Resources\arrow.png" />
     <BundleResource Include="Resources\voc.png" />
-    <BundleResource Include="Resources\images.jpeg" />
     <BundleResource Include="Resources\amra.jpg" />
     <BundleResource Include="Resources\game.png" />
     <BundleResource Include="Resources\play.png" />
@@ -293,7 +291,7 @@
     <BundleResource Include="Resources\shirt.png" />
     <BundleResource Include="Resources\shoes.png" />
     <BundleResource Include="Resources\skirt.png" />
-    <BundleResource Include="Resources\sun-2.png" />
+    <BundleResource Include="Resources\sunn.png" />
     <BundleResource Include="Resources\swim.png" />
     <BundleResource Include="Resources\desk.png" />
     <BundleResource Include="Resources\eraser.png" />

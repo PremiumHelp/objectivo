@@ -108,6 +108,12 @@
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/bin/iPhoneSimulator/Debug/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/bin/iPhoneSimulator/Debug/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/bin/iPhoneSimulator/Debug/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/obj/iPhoneSimulator/Debug/ObjectivoF.iOS.csprojAssemblyReference.cache
+/Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/obj/iPhoneSimulator/Debug/ObjectivoF.iOS.csproj.CoreCompileInputs.cache
+/Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/obj/iPhoneSimulator/Debug/XamlC.stamp
+/Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/obj/iPhoneSimulator/Debug/ObjectivoF.iOS.csproj.CopyComplete
+/Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/obj/iPhoneSimulator/Debug/ObjectivoF.iOS.exe
+/Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/obj/iPhoneSimulator/Debug/ObjectivoF.iOS.pdb
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/ibtool/_BundleResourceWithLogicalName.items
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/actool/_PartialAppManifest.items
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/actool/_BundleResourceWithLogicalName.items
@@ -176,7 +182,7 @@
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/optimized/shirt.png
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/optimized/shoes.png
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/optimized/skirt.png
-/Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/optimized/sun-2.png
+/Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/optimized/sunn.png
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/optimized/swim.png
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/optimized/desk.png
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/optimized/eraser.png
@@ -196,11 +202,5 @@
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/optimized/horse.png
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/optimized/sheep.png
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/optimized/turtle.png
-/Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/optimized/
-/Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/obj/iPhoneSimulator/Debug/ObjectivoF.iOS.csprojAssemblyReference.cache
-/Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/obj/iPhoneSimulator/Debug/ObjectivoF.iOS.csproj.CoreCompileInputs.cache
-/Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/obj/iPhoneSimulator/Debug/XamlC.stamp
-/Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/obj/iPhoneSimulator/Debug/ObjectivoF.iOS.csproj.CopyComplete
-/Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/obj/iPhoneSimulator/Debug/ObjectivoF.iOS.exe
-/Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/obj/iPhoneSimulator/Debug/ObjectivoF.iOS.pdb
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/optimized/licon.png
+/Users/amrafeta/Desktop/ObjectivoFront/objectivo/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/optimized/

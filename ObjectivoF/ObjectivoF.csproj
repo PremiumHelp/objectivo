@@ -82,11 +82,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Data\FrenchPhraseBook.xml" />
-    <EmbeddedResource Include="Views\French.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Include="Data\GermanPhraseBook.xml" />
     <EmbeddedResource Include="Data\ItalianPhraseBook.xml" />
     <EmbeddedResource Include="Data\SpanishPhraseBook.xml" />
@@ -152,6 +147,11 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Animals.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrenchPhraseBook.xml" />
+    <EmbeddedResource Include="Views\French.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

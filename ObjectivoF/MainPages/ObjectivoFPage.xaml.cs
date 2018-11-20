@@ -101,7 +101,7 @@ namespace ObjectivoF
             {
 
 
-                await Navigation.PushAsync(new TabControl());
+                App.Current.MainPage = new NavigationPage(new TabControl());
 
             }
             else

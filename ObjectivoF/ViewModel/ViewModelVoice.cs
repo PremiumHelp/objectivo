@@ -47,7 +47,7 @@ namespace ObjectivoF.ViewModel
                 {
                     audioRecordingService.StartRecording();
 
-                    Image = "recording.png";
+                Image = "recording.png" ;
                 }
                 else
                 {

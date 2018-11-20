@@ -155,6 +155,48 @@
       <HintPath>..\packages\Xamarin.Forms.3.3.0.967583\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PInvoke.Windows.Core">
+      <HintPath>..\packages\PInvoke.Windows.Core.0.3.2\lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\PInvoke.Windows.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="PInvoke.Kernel32">
+      <HintPath>..\packages\PInvoke.Kernel32.0.3.2\lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\PInvoke.Kernel32.dll</HintPath>
+    </Reference>
+    <Reference Include="PInvoke.BCrypt">
+      <HintPath>..\packages\PInvoke.BCrypt.0.3.2\lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\PInvoke.BCrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="PInvoke.NCrypt">
+      <HintPath>..\packages\PInvoke.NCrypt.0.3.2\lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\PInvoke.NCrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="Validation">
+      <HintPath>..\packages\Validation.2.2.8\lib\dotnet\Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLCrypto">
+      <HintPath>..\packages\PCLCrypto.2.0.147\lib\MonoAndroid23\PCLCrypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.CustomTabs">
+      <HintPath>..\packages\Xamarin.Android.Support.CustomTabs.27.0.2.1\lib\MonoAndroid81\Xamarin.Android.Support.CustomTabs.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.Mobile.Client">
+      <HintPath>..\packages\Microsoft.Azure.Mobile.Client.4.0.2\lib\monoandroid70\Microsoft.Azure.Mobile.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Licensing">
+      <HintPath>..\packages\Syncfusion.Licensing.16.3.0.29\lib\MonoAndroid10\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v17.Leanback">
+      <HintPath>..\packages\Xamarin.Android.Support.v17.Leanback.27.0.2.1\lib\MonoAndroid81\Xamarin.Android.Support.v17.Leanback.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfCarousel.Android">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfCarousel.16.3.0.29\lib\MonoAndroid10\Syncfusion.SfCarousel.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfCarousel.XForms.Android">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfCarousel.16.3.0.29\lib\MonoAndroid10\Syncfusion.SfCarousel.XForms.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfCarousel.XForms">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfCarousel.16.3.0.29\lib\MonoAndroid10\Syncfusion.SfCarousel.XForms.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ObjectivoF\ObjectivoF.csproj">
@@ -212,6 +254,59 @@
     <AndroidResource Include="Resources\drawable\mul.png" />
     <AndroidResource Include="Resources\drawable\sin.png" />
     <AndroidResource Include="Resources\drawable\fc.png" />
+    <AndroidResource Include="Resources\drawable\quiz.png" />
+    <AndroidResource Include="Resources\drawable\ananas.png" />
+    <AndroidResource Include="Resources\drawable\apple.png" />
+    <AndroidResource Include="Resources\drawable\banana.png" />
+    <AndroidResource Include="Resources\drawable\bear.png" />
+    <AndroidResource Include="Resources\drawable\beee.png" />
+    <AndroidResource Include="Resources\drawable\bell.png" />
+    <AndroidResource Include="Resources\drawable\bird.png" />
+    <AndroidResource Include="Resources\drawable\carrots.png" />
+    <AndroidResource Include="Resources\drawable\cat.png" />
+    <AndroidResource Include="Resources\drawable\cherry.png" />
+    <AndroidResource Include="Resources\drawable\colgreen.png" />
+    <AndroidResource Include="Resources\drawable\corn.png" />
+    <AndroidResource Include="Resources\drawable\cow.png" />
+    <AndroidResource Include="Resources\drawable\dog.png" />
+    <AndroidResource Include="Resources\drawable\ear.png" />
+    <AndroidResource Include="Resources\drawable\egg.png" />
+    <AndroidResource Include="Resources\drawable\eraser.png" />
+    <AndroidResource Include="Resources\drawable\fish.png" />
+    <AndroidResource Include="Resources\drawable\fox.png" />
+    <AndroidResource Include="Resources\drawable\grapes.png" />
+    <AndroidResource Include="Resources\drawable\hamburger.png" />
+    <AndroidResource Include="Resources\drawable\high.png" />
+    <AndroidResource Include="Resources\drawable\horse.png" />
+    <AndroidResource Include="Resources\drawable\jeans.png" />
+    <AndroidResource Include="Resources\drawable\kiwi.png" />
+    <AndroidResource Include="Resources\drawable\kohl.png" />
+    <AndroidResource Include="Resources\drawable\lemon.png" />
+    <AndroidResource Include="Resources\drawable\licon.png" />
+    <AndroidResource Include="Resources\drawable\lineal.png" />
+    <AndroidResource Include="Resources\drawable\list.png" />
+    <AndroidResource Include="Resources\drawable\listing.png" />
+    <AndroidResource Include="Resources\drawable\neck.png" />
+    <AndroidResource Include="Resources\drawable\peach.png" />
+    <AndroidResource Include="Resources\drawable\peas.png" />
+    <AndroidResource Include="Resources\drawable\pen.png" />
+    <AndroidResource Include="Resources\drawable\pencil.png" />
+    <AndroidResource Include="Resources\drawable\play.png" />
+    <AndroidResource Include="Resources\drawable\plum.png" />
+    <AndroidResource Include="Resources\drawable\potato.png" />
+    <AndroidResource Include="Resources\drawable\sbag.png" />
+    <AndroidResource Include="Resources\drawable\scarf.png" />
+    <AndroidResource Include="Resources\drawable\sharp.png" />
+    <AndroidResource Include="Resources\drawable\sheep.png" />
+    <AndroidResource Include="Resources\drawable\shirt.png" />
+    <AndroidResource Include="Resources\drawable\shoes.png" />
+    <AndroidResource Include="Resources\drawable\skirt.png" />
+    <AndroidResource Include="Resources\drawable\straw.png" />
+    <AndroidResource Include="Resources\drawable\sunn.png" />
+    <AndroidResource Include="Resources\drawable\swim.png" />
+    <AndroidResource Include="Resources\drawable\tomato.png" />
+    <AndroidResource Include="Resources\drawable\turtle.png" />
+    <AndroidResource Include="Resources\drawable\warm.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
@@ -237,4 +332,6 @@
   <Import Project="..\packages\Xamarin.Android.Support.Design.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Design.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Design.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Design.targets')" />
   <Import Project="..\packages\Xamarin.Android.Support.v7.MediaRouter.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.v7.MediaRouter.targets" Condition="Exists('..\packages\Xamarin.Android.Support.v7.MediaRouter.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.v7.MediaRouter.targets')" />
   <Import Project="..\packages\Xamarin.Forms.3.3.0.967583\build\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.3.3.0.967583\build\Xamarin.Forms.targets')" />
+  <Import Project="..\packages\Xamarin.Android.Support.CustomTabs.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.CustomTabs.targets" Condition="Exists('..\packages\Xamarin.Android.Support.CustomTabs.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.CustomTabs.targets')" />
+  <Import Project="..\packages\Xamarin.Android.Support.v17.Leanback.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.v17.Leanback.targets" Condition="Exists('..\packages\Xamarin.Android.Support.v17.Leanback.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.v17.Leanback.targets')" />
 </Project>

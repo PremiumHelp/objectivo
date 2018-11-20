@@ -18,10 +18,10 @@ namespace ObjectivoF
         {
             #region How to load an XML file embedded resource
             var assembly = IntrospectionExtensions.GetTypeInfo(typeof(LoadResourceText)).Assembly;
-            Stream stream = assembly.GetManifestResourceStream("ObjectivoF.Data.FrenchPhraseBook.xml");
+            Stream stream = assembly.GetManifestResourceStream("ObjectivoF.FrenchPhraseBook.xml");
 
             List<Phrases> phrases;
-            using (var reader = new System.IO.StreamReader(stream))
+            using (var reader = new StreamReader(stream))
             {
                 var serializer = new XmlSerializer(typeof(List<Phrases>));
                 phrases = (List<Phrases>)serializer.Deserialize(reader);

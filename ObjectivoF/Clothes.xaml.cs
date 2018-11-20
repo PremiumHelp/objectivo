@@ -23,7 +23,7 @@ namespace ObjectivoF
             allItems.Add(new SfCarouselItem() { ItemContent = new Image() { Source = "shirt.png", Aspect = Aspect.AspectFit } });
             allItems.Add(new SfCarouselItem() { ItemContent = new Image() { Source = "shoes.png", Aspect = Aspect.AspectFit } });
             allItems.Add(new SfCarouselItem() { ItemContent = new Image() { Source = "skirt.png", Aspect = Aspect.AspectFit } });
-            allItems.Add(new SfCarouselItem() { ItemContent = new Image() { Source = "sun-2.png", Aspect = Aspect.AspectFit } });
+            allItems.Add(new SfCarouselItem() { ItemContent = new Image() { Source = "sunn.png", Aspect = Aspect.AspectFit } });
             allItems.Add(new SfCarouselItem() { ItemContent = new Image() { Source = "swim.png", Aspect = Aspect.AspectFit } });
 
             flash.ItemsSource = allItems;

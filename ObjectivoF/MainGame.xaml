@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ObjectivoF.MainGame">
 
-       <StackLayout  Orientation="Vertical" VerticalOptions="StartAndExpand" Padding="0" Spacing="50" Margin="50,160,30,0">
-        <StackLayout Margin="20,-50,0,50">
-      <Image Source="colgreen.png" WidthRequest="50" HeightRequest="135"  ></Image>
+       <StackLayout  Orientation="Vertical" VerticalOptions="StartAndExpand" Padding="40" Spacing="30" Margin="50,130,30,0">
+        <StackLayout Margin="20,-50,0,50"> 
+      <Image Source="colgreen.png" WidthRequest="50" HeightRequest="135"></Image>
         </StackLayout>
         <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
            

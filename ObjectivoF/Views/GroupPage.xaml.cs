@@ -33,30 +33,12 @@ namespace ObjectivoF.Views
             _lstx.IsRefreshing = false;
         }
 
-        void Info_Clicked(object sender, System.EventArgs e)
-        {
-            DisplayAlert("Current User", Users.UserName, "Okey");
-        }
-
         void Plus_Clicked(object sender, System.EventArgs e)
         {
             Navigation.PushAsync(new AddGroup());
 
         }
-
-        async void FbLogout(object sender, EventArgs e)
-        {
-            var result = await DependencyService.Get<IFacebookLogin>().SignOut();
-            if (result.Status == FBStatus.Success)
-            {
-                  App.Current.MainPage = new NavigationPage(new ObjectivoFPage());
-            }
-            else
-            {
-                await DisplayAlert("Error", result.Message, "Ok");
-            }
-        }
-
+       
         void Handle_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
         {
 
@@ -66,14 +48,41 @@ namespace ObjectivoF.Views
                 var selectGroup = (Group)_lstx.SelectedItem;
 
                 Navigation.PushAsync(new MainChat());
-         
+
                 MessagingCenter.Send<GroupPage, Group>(this, "GroupProp", selectGroup);
 
 
 
 
             }
+        }
 
+
+
+
+
+        void Info_Clicked(object sender, System.EventArgs e)
+        {
+            DisplayAlert("Current User", Users.UserName, "Okey");
+        }
+      
+       
+
+       
+      
+
+
+        async void FbLogout(object sender, EventArgs e)
+        {
+            var result = await DependencyService.Get<IFacebookLogin>().SignOut();
+            if (result.Status == FBStatus.Success)
+            {
+                App.Current.MainPage = new NavigationPage(new ObjectivoFPage());
+            }
+            else
+            {
+                await DisplayAlert("Error", result.Message, "Ok");
+            }
         }
     }
 }

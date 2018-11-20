@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ObjectivoF.Games">
     <ContentPage.Content>
-  <StackLayout  Orientation="Vertical" VerticalOptions="StartAndExpand" Padding="0" Spacing="130" Margin="90,200">
+  <StackLayout  Orientation="Vertical" VerticalOptions="StartAndExpand" Padding="0" Spacing="100" Margin="70,150">
             
   
 

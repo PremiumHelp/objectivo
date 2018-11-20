@@ -17,7 +17,7 @@ namespace ObjectivoF.iOS
         {
             
         }
-
+        //the Getcontroller method is for the shared behaviour from IOS to all ViewControllers
         private UIViewController GetController()
         {
             var vc = UIApplication.SharedApplication.KeyWindow.RootViewController;
@@ -27,10 +27,13 @@ namespace ObjectivoF.iOS
         }
 
         LoginManager manager;
+
         public async Task<FbLoginResult> SignIn()
         {
+
             var tcs = new TaskCompletionSource<FbLoginResult>();
             manager = new LoginManager();
+
             manager.Init();
             var result = await manager.LogInWithReadPermissionsAsync(new string[] { "email", "public_profile" }, GetController());
             if (!result.IsCancelled)
@@ -87,29 +90,8 @@ namespace ObjectivoF.iOS
             return tcs.Task;
         }
 
-        public void ShareLinkOnFacebook(string text, string description, string link)
-        {
-            var item = NSObject.FromObject(link);
-            var activityItems = new[] { item };
-            var activityController = new UIActivityViewController(activityItems, null);
-            GetController().PresentViewController(activityController, true, () => { });
-        }
-
-        public void ShareTextOnFacebook(string text)
-        {
-            var item = NSObject.FromObject(text);
-            var activityItems = new[] { item };
-            var activityController = new UIActivityViewController(activityItems, null);
-            GetController().PresentViewController(activityController, true, () => { });
-        }
-
-        public void ShareImageOnFacebook(string caption, string imagePath)
-        {
-            var img = UIImage.LoadFromData(NSData.FromFile(imagePath));
-            var item = NSObject.FromObject(img);
-            var activityItems = new[] { item };
-            var activityController = new UIActivityViewController(activityItems, null);
-            GetController().PresentViewController(activityController, true, () => { });
-        }
+       
+      
+       
     }
 }

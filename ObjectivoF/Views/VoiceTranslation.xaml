@@ -2,10 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ObjectivoF.VoiceTranslation">
 	<ContentPage.Content>
         <StackLayout VerticalOptions="CenterAndExpand">
-           
+          
         <Label   Text="{Binding Original}" />
           <Label  Text="{Binding Translated}" />
-            <Button x:Name="button" Image="{Binding Image}"  Command="{Binding OnRecognizeButton}"></Button>
+            <Button x:Name="button" Image="{Binding Image}" Command="{Binding OnRecognizeButton}"></Button>
 
         </StackLayout>
         
