@@ -36,6 +36,7 @@ namespace ObjectivoF.iOS
 
             manager.Init();
             var result = await manager.LogInWithReadPermissionsAsync(new string[] { "email", "public_profile" }, GetController());
+           
             if (!result.IsCancelled)
             {
                 try

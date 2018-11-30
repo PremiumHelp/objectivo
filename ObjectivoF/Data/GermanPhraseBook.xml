@@ -3,31 +3,32 @@
     <Phrases>
         <Name>Hello, please…!       Hallo?  Bitte…!</Name>
 
-    </Phrases>>
+    </Phrases>
     <Phrases>
-        <Name>Yes/No   Ja/Nein</Name>
+        <Name>Yes/No                Ja/Nein </Name>
+      
 
     </Phrases>
     <Phrases>
-        <Name>Do you speak English? Sprichst du Englisch? </Name>
-       
+        <Name>Do you speak English?          Sprichst du English? </Name>
+   
     </Phrases>
     <Phrases>
-        <Name>How are you? Wie geht es dir?</Name>
+        <Name>How are you?                  Wie geht es dir?</Name>
     </Phrases>
     <Phrases>
-        <Name>Where is…?        Wo ist...? </Name>
+        <Name>Where is…?                  Wo ist...? </Name>
     </Phrases>
     <Phrases>
-        <Name>How much does it cost?    Wie viel kostet es?</Name>
+        <Name>How much does it cost?             Wie viel kostet es?</Name>
     </Phrases>
     <Phrases>
-        <Name>Thank you very much!      Danke sehr !</Name>
+        <Name>Thank you very much!               Danke sehr !</Name>
     </Phrases>
     <Phrases>
-        <Name>Goodbye    Aufwiedersehen</Name>
+        <Name>Goodbye!           Aufwiedersehen!</Name>
     </Phrases>
     <Phrases>
-        <Name>Good Night  Gute Nacht</Name>
+        <Name>Good Night          Gute Nacht</Name>
     </Phrases>
 </ArrayOfPhrases> 

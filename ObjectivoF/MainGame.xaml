@@ -21,7 +21,7 @@
         <Image Source="mul.png" WidthRequest="0" HeightRequest="40" Margin="0,3,2,4"/>
     </StackLayout>
     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand" Margin="1,1,50,1">
-        <Button Text="MultiPlayer" BackgroundColor="#115433"  TextColor="White" FontFamily="Avenir" FontSize="18"/>
+        <Button Text="MultiPlayer" BackgroundColor="#115433" Clicked="Handle_Clicked_1"  TextColor="White" FontFamily="Avenir" FontSize="18"/>
     </StackLayout>
             
 </StackLayout>

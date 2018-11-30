@@ -54,10 +54,13 @@ namespace ObjectivoF.ViewModel
 
         public ViewModelObject()
         {
-            this.visionClient =new VisionServiceClient("8f832eedec7846e9870d5c5e7401480c", "https://westeurope.api.cognitive.microsoft.com/vision/v1.0");
+            this.visionClient =new VisionServiceClient("8f832eedec7846e9870d5c5e7401480c", 
+                                                       "https://westeurope.api.cognitive.microsoft.com/vision/v1.0");
 
             textTranslationService = new TextTranslationService(new AuthenticationService(Constants.TextTranslatorApiKey));
+
             TakePictureButtonClicked = new Command(TakePicture);
+
             UploadPictureButtonClicked = new Command(UploadPicture);
 
 

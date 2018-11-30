@@ -16,7 +16,7 @@ namespace ObjectivoF
     {
         public French()
         {
-            #region How to load an XML file embedded resource
+        
             var assembly = IntrospectionExtensions.GetTypeInfo(typeof(LoadResourceText)).Assembly;
             Stream stream = assembly.GetManifestResourceStream("ObjectivoF.FrenchPhraseBook.xml");
 
@@ -26,9 +26,16 @@ namespace ObjectivoF
                 var serializer = new XmlSerializer(typeof(List<Phrases>));
                 phrases = (List<Phrases>)serializer.Deserialize(reader);
             }
-            #endregion
-
+        
             var listView = new ListView();
+          
+            listView.ItemTemplate = new DataTemplate(() =>
+            {
+                var textCell = new TextCell();
+                textCell.SetBinding(TextCell.TextProperty, "Name");
+
+                return textCell;
+            });
             listView.ItemsSource = phrases;
             var image = new Image { Source = "france.jpg" };
 

@@ -7,7 +7,7 @@ namespace ObjectivoF
 {
     static public class AppSettings
     {
-        public const int qCount = 3;
+        public const int qCount = 6;
         public static int currentQ = 1;
         public static int Score = 0;
         public static string Username = "";
@@ -61,6 +61,53 @@ namespace ObjectivoF
                 Answer3 = "das Krankenhaus",
                 CorrectAnswer = 3
             };
+            XamarinQuiz item4 = new XamarinQuiz()
+            {
+                Question = "to read",
+                Answer1 = "Fahren",
+                Answer2 = "Rennen",
+                Answer3 = "Lesen",
+                CorrectAnswer = 3
+
+            };
+
+            XamarinQuiz item5 = new XamarinQuiz()
+            {
+                Question = "the teacher",
+                Answer1 = "der Lehrer",
+                Answer2 = "der Mann",
+                Answer3 = "die Lehrerin",
+                CorrectAnswer = 3
+
+            };
+           
+            XamarinQuiz item6 = new XamarinQuiz()
+            {
+                Question = "snow",
+                Answer1 = "Schnee",
+                Answer2 = "Wind",
+                Answer3 = "Regen",
+                CorrectAnswer = 1
+
+            };
+            XamarinQuiz item7 = new XamarinQuiz()
+            {
+                Question = "the desk",
+                Answer1 = "die Sessel",
+                Answer2 = "der Tisch",
+                Answer3 = "die Kopfhohrer",
+                CorrectAnswer = 2
+
+            };
+            XamarinQuiz item8 = new XamarinQuiz()
+            {
+                Question = "a bird",
+                Answer1 = "ein Hund",
+                Answer2 = "eine Vogel",
+                Answer3 = "ein Krokodil",
+                CorrectAnswer = 2
+
+            };
 
 
             IMobileServiceTable<XamarinQuiz> xamarinQuizTable = AppSettings.MobileService.GetTable<XamarinQuiz>();
@@ -68,6 +115,12 @@ namespace ObjectivoF
             xamarinQuizTable.InsertAsync(item);
             xamarinQuizTable.InsertAsync(item2);
             xamarinQuizTable.InsertAsync(item3);
+            xamarinQuizTable.InsertAsync(item4);
+            xamarinQuizTable.InsertAsync(item5);
+            xamarinQuizTable.InsertAsync(item6);
+            xamarinQuizTable.InsertAsync(item7);
+            xamarinQuizTable.InsertAsync(item8);
+         
 
             ((QuestionViewModel)BindingContext).LoadQuestions();
 
@@ -92,6 +145,39 @@ namespace ObjectivoF
             btnAnswerThree.Clicked += (sender, ea) =>
             {
                 if (((QuestionViewModel)BindingContext).CheckIfCorrect(3))
+                {
+                    DoAnswer();
+                }
+                else
+                {
+                    score = score / 2;
+                }
+            };
+            btnAnswerFour.Clicked += (sender, ea) =>
+            {
+                if (((QuestionViewModel)BindingContext).CheckIfCorrect(4))
+                {
+                    DoAnswer();
+                }
+                else
+                {
+                    score = score / 2;
+                }
+            };
+            btnAnswerFive.Clicked += (sender, ea) =>
+            {
+                if (((QuestionViewModel)BindingContext).CheckIfCorrect(5))
+                {
+                    DoAnswer();
+                }
+                else
+                {
+                    score = score / 2;
+                }
+            };
+            btnAnswerSix.Clicked += (sender, ea) =>
+            {
+                if (((QuestionViewModel)BindingContext).CheckIfCorrect(6))
                 {
                     DoAnswer();
                 }

@@ -1,5 +1,5 @@
 ﻿<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\Xamarin.Forms.3.3.0.967583\build\Xamarin.Forms.props" Condition="Exists('..\packages\Xamarin.Forms.3.3.0.967583\build\Xamarin.Forms.props')" />
+  <Import Project="..\packages\Xamarin.Forms.3.4.0.1008975\build\Xamarin.Forms.props" Condition="Exists('..\packages\Xamarin.Forms.3.4.0.1008975\build\Xamarin.Forms.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -155,6 +155,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="TwoQuiz.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TwoThanks.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -284,6 +292,14 @@
     </Compile>
     <Compile Include="FbLoginResult.cs" />
     <Compile Include="IFacebookLogin.cs" />
+    <Compile Include="ViewModel\TwoQuestionViewModel.cs" />
+    <Compile Include="TwoQuiz.xaml.cs">
+      <DependentUpon>TwoQuiz.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TwoThanks.xaml.cs">
+      <DependentUpon>TwoThanks.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\ViewModelResult.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.ProjectOxford.Vision">
@@ -377,15 +393,6 @@
     <Reference Include="Plugin.Media">
       <HintPath>..\packages\Xam.Plugin.Media.4.0.1.5\lib\netstandard1.0\Plugin.Media.dll</HintPath>
     </Reference>
-    <Reference Include="Xamarin.Forms.Core">
-      <HintPath>..\packages\Xamarin.Forms.3.3.0.967583\lib\netstandard1.0\Xamarin.Forms.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Forms.Platform">
-      <HintPath>..\packages\Xamarin.Forms.3.3.0.967583\lib\netstandard1.0\Xamarin.Forms.Platform.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Forms.Xaml">
-      <HintPath>..\packages\Xamarin.Forms.3.3.0.967583\lib\netstandard1.0\Xamarin.Forms.Xaml.dll</HintPath>
-    </Reference>
     <Reference Include="Prism">
       <HintPath>..\packages\Prism.Core.7.1.0.431\lib\netstandard1.0\Prism.dll</HintPath>
     </Reference>
@@ -407,6 +414,15 @@
     <Reference Include="Unity.ServiceLocation">
       <HintPath>..\packages\Unity.5.8.11\lib\netstandard1.0\Unity.ServiceLocation.dll</HintPath>
     </Reference>
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\packages\Xamarin.Forms.3.4.0.1008975\lib\netstandard1.0\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\packages\Xamarin.Forms.3.4.0.1008975\lib\netstandard1.0\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\packages\Xamarin.Forms.3.4.0.1008975\lib\netstandard1.0\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -425,5 +441,5 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
-  <Import Project="..\packages\Xamarin.Forms.3.3.0.967583\build\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.3.3.0.967583\build\Xamarin.Forms.targets')" />
+  <Import Project="..\packages\Xamarin.Forms.3.4.0.1008975\build\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.3.4.0.1008975\build\Xamarin.Forms.targets')" />
 </Project>

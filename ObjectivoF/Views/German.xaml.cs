@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Reflection;
 using System.IO;
 using ObjectivoF.Data;
@@ -15,13 +14,25 @@ namespace ObjectivoF
         {
             var assembly = IntrospectionExtensions.GetTypeInfo(typeof(LoadResourceText)).Assembly;
             Stream stream = assembly.GetManifestResourceStream("ObjectivoF.Data.GermanPhraseBook.xml");
+         
             List<Phrases> phrases;
-            using (var reader = new System.IO.StreamReader(stream))
+
+            using (var reader = new StreamReader(stream))
             {
                 var serializer = new XmlSerializer(typeof(List<Phrases>));
                 phrases = (List<Phrases>)serializer.Deserialize(reader);
             }
+
             var listView = new ListView();
+           
+            listView.ItemTemplate = new DataTemplate(() =>
+            {
+                var textCell = new TextCell();
+                textCell.SetBinding(TextCell.TextProperty, "Name");
+
+                return textCell;
+            });
+
             listView.ItemsSource = phrases;
             var image = new Image { Source = "german.jpg" };
 

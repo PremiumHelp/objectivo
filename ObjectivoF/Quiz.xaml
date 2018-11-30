@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ObjectivoF.Quiz"
-             xmlns:models="clr-namespace:ObjectivoF;assembly=ObjectivoF">
+             xmlns:models="clr-namespace:ObjectivoF;assembly=ObjectivoF" BackgroundColor="#b2d8d8">
      <ContentPage.BindingContext>
         <models:QuestionViewModel />
     </ContentPage.BindingContext>
@@ -14,11 +14,21 @@
                        HorizontalTextAlignment="Center"
                        Text="{Binding Question}" />
                 <Button x:Name="btnAnswerOne" Text="{Binding Answer1}" 
-                    IsEnabled="{Binding Answer1Enabled}" />
+                    IsEnabled="{Binding Answer1Enabled}" TextColor="#EE7600" FontAttributes="Bold" />
                 <Button x:Name="btnAnswerTwo" Text="{Binding Answer2}" 
-                    IsEnabled="{Binding Answer2Enabled}" />
+                    IsEnabled="{Binding Answer2Enabled}" TextColor="#EE7600" FontAttributes="Bold" />
                 <Button x:Name="btnAnswerThree" Text="{Binding Answer3}" 
-                    IsEnabled="{Binding Answer3Enabled}" />
+                    IsEnabled="{Binding Answer3Enabled}" TextColor="#EE7600" FontAttributes="Bold" />
+                
+                 <Button x:Name="btnAnswerFour" Text="{Binding Answer4}" 
+                    IsEnabled="{Binding Answer4Enabled}" TextColor="#EE7600" FontAttributes="Bold" />
+                 
+                <Button x:Name="btnAnswerFive" Text="{Binding Answer5}" 
+                    IsEnabled="{Binding Answer5Enabled}" TextColor="#EE7600" FontAttributes="Bold" />
+                 
+                <Button x:Name="btnAnswerSix" Text="{Binding Answer6}" 
+                    IsEnabled="{Binding Answer6Enabled}" TextColor="#EE7600" FontAttributes="Bold" />
+                
                 <Label x:Name="lblMessage"
                        FontAttributes="Italic"
                        FontSize="Large"

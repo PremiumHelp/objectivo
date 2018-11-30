@@ -21,6 +21,13 @@ namespace ObjectivoF
                 phrases = (List<Phrases>)serializer.Deserialize(reader);
             }
             var listView = new ListView();
+            listView.ItemTemplate = new DataTemplate(() =>
+            {
+                var textCell = new TextCell();
+                textCell.SetBinding(TextCell.TextProperty, "Name");
+
+                return textCell;
+            });
             listView.ItemsSource = phrases;
             var image = new Image { Source = "spain.jpg" };
 

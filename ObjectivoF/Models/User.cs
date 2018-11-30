@@ -8,7 +8,7 @@ namespace ObjectivoF
         public string Email { get; set; }
         public string Password { get; set; }
         public string[] vocabs { get; set; }
-
+        public string Status { get; set; }
         public User()
         {}
      }

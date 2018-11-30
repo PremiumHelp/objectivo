@@ -63,10 +63,6 @@
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/bin/Debug/Plugin.Permissions.xml
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/bin/Debug/Validation.xml
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/bin/Debug/Plugin.Media.xml
-/Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/bin/Debug/Xamarin.Forms.Core.pdb
-/Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/bin/Debug/Xamarin.Forms.Core.xml
-/Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/bin/Debug/Xamarin.Forms.Xaml.pdb
-/Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/bin/Debug/Xamarin.Forms.Xaml.xml
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/bin/Debug/Prism.pdb
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/bin/Debug/Prism.xml
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/bin/Debug/Prism.Forms.pdb
@@ -77,8 +73,11 @@
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/bin/Debug/Unity.Abstractions.pdb
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/bin/Debug/Unity.Container.pdb
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/bin/Debug/Unity.ServiceLocation.pdb
+/Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/bin/Debug/Xamarin.Forms.Core.pdb
+/Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/bin/Debug/Xamarin.Forms.Core.xml
+/Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/bin/Debug/Xamarin.Forms.Xaml.pdb
+/Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/bin/Debug/Xamarin.Forms.Xaml.xml
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/obj/Debug/ObjectivoF.csproj.App.config
-/Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/obj/Debug/ObjectivoF.csprojAssemblyReference.cache
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/obj/Debug/App.xaml.g.cs
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/obj/Debug/TabbedPages/TabControl.xaml.g.cs
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/obj/Debug/TabbedPages/Translate.xaml.g.cs
@@ -111,8 +110,11 @@
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/obj/Debug/School.xaml.g.cs
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/obj/Debug/Animals.xaml.g.cs
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/obj/Debug/Views/French.xaml.g.cs
+/Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/obj/Debug/TwoQuiz.xaml.g.cs
+/Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/obj/Debug/TwoThanks.xaml.g.cs
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/obj/Debug/ObjectivoF.csproj.CoreCompileInputs.cache
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/obj/Debug/XamlC.stamp
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/obj/Debug/ObjectivoF.csproj.CopyComplete
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/obj/Debug/ObjectivoF.dll
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/obj/Debug/ObjectivoF.pdb
+/Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/obj/Debug/ObjectivoF.csprojAssemblyReference.cache
