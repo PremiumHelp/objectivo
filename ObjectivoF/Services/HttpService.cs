@@ -94,13 +94,14 @@ namespace ObjectivoF
             return response;
         }
 
-        public static async Task<HttpResponseMessage> ChangeResults(string uri,Game game)
+        public static async Task<HttpResponseMessage> ChangeResults(string uri,Game currentGame)
         {
-            string json = JsonConvert.SerializeObject(game);
+            string json = JsonConvert.SerializeObject(currentGame);
             var content = new StringContent(json.ToString(), Encoding.UTF8, "application/json");
             var request = new HttpRequestMessage();
             request.RequestUri = new Uri(uri);
             request.Method = HttpMethod.Put;
+            request.Content = content;
             return await httpClient.SendAsync(request);
         }
     }

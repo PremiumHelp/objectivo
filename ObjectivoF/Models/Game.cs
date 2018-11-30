@@ -6,8 +6,8 @@ namespace ObjectivoF
         public string GameId { get; set; }
         public string FirstPlayerId { get; set; }
         public string SecondPlayerId { get; set; }
-        public string FirstPlayerScore { get; set; }
-        public string SecondPlayerScore { get; set; }
+        public int FirstPlayerScore { get; set; }
+        public int SecondPlayerScore { get; set; }
 
         public Game()
         { }

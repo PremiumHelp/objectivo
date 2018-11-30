@@ -144,6 +144,9 @@ namespace ObjectivoF
                 else
                 {
                     score = score / 2;
+                    currentGame.FirstPlayerId = App.UserId;
+                    currentGame.FirstPlayerScore = score;
+                    var response = HttpService.ChangeResults(Constants.uri + path + currentGame.GameId, currentGame);
 
                 }
             };
@@ -154,6 +157,10 @@ namespace ObjectivoF
                 else
                 {
                     score = score / 2;
+                    currentGame.FirstPlayerId = App.UserId;
+                    currentGame.FirstPlayerScore = score;
+                    var response = HttpService.ChangeResults(Constants.uri + path + currentGame.GameId, currentGame);
+
                 }
             };
 
@@ -166,6 +173,9 @@ namespace ObjectivoF
                 else
                 {
                     score = score / 2;
+                    currentGame.FirstPlayerId = App.UserId;
+                    currentGame.FirstPlayerScore = score;
+                    var response = HttpService.ChangeResults(Constants.uri + path + currentGame.GameId, currentGame);
                 }
             };
             btnAnswerFour.Clicked += (sender, ea) =>
@@ -177,6 +187,9 @@ namespace ObjectivoF
                 else
                 {
                     score = score / 2;
+                    currentGame.FirstPlayerId = App.UserId;
+                    currentGame.FirstPlayerScore = score;
+                    var response = HttpService.ChangeResults(Constants.uri + path + currentGame.GameId, currentGame);
                 }
             };
             btnAnswerFive.Clicked += (sender, ea) =>
@@ -188,6 +201,8 @@ namespace ObjectivoF
                 else
                 {
                     score = score / 2;
+                    var response = HttpService.ChangeResults(Constants.uri + path + currentGame.GameId, newGame);
+
                 }
             };
             btnAnswerSix.Clicked += (sender, ea) =>
@@ -201,8 +216,9 @@ namespace ObjectivoF
 
                     score = score / 2;
 
-                    var response = HttpService.ChangeResults(Constants.uri + path + currentGame.GameId);
-
+                    currentGame.FirstPlayerId = App.UserId;
+                    currentGame.FirstPlayerScore = score;
+                    var response = HttpService.ChangeResults(Constants.uri + path + currentGame.GameId, currentGame);
 
                     //  call the api for changing the score using the variable score and the game id i gave you when you created the game
                 }
