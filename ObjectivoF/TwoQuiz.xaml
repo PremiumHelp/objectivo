@@ -10,21 +10,13 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout x:Name="slQuestion" IsVisible="true">
-
-             <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center" Padding="70">
-      <Button x:Name="_btnTimerStarter" BackgroundColor="Green" WidthRequest="200" Text="Start"  Font="30" TextColor="Black" Clicked="TimerStarterClicked"></Button>
-      <Label x:Name="_lblTime" Text="0"  TextColor="Black" FontSize="60" HorizontalTextAlignment="Center" />
-    </StackLayout>
-         
+            
                 
   <Label x:Name="lblQuestion"   FontAttributes="Bold" FontSize="Large"  HorizontalTextAlignment="Center" Text="{Binding Question}" />
   <Button x:Name="btnAnswerOne" Text="{Binding Answer1}" IsEnabled="{Binding Answer1Enabled}" TextColor="#EE7600" FontAttributes="Bold" />
   <Button x:Name="btnAnswerTwo" Text="{Binding Answer2}" IsEnabled="{Binding Answer2Enabled}" TextColor="#EE7600" FontAttributes="Bold" />
-  <Button x:Name="btnAnswerThree" Text="{Binding Answer3}" IsEnabled="{Binding Answer3Enabled}" TextColor="#EE7600" FontAttributes="Bold" />
-  <Button x:Name="btnAnswerFour" Text="{Binding Answer4}" IsEnabled="{Binding Answer4Enabled}" TextColor="#EE7600" FontAttributes="Bold" />
-  <Button x:Name="btnAnswerFive" Text="{Binding Answer5}" IsEnabled="{Binding Answer5Enabled}" TextColor="#EE7600" FontAttributes="Bold" />  
-  <Button x:Name="btnAnswerSix" Text="{Binding Answer6}"  IsEnabled="{Binding Answer6Enabled}" TextColor="#EE7600" FontAttributes="Bold" />
-               
+  <Button x:Name="btnAnswerThree"  Text="{Binding Answer3}" IsEnabled="{Binding Answer3Enabled}" TextColor="#EE7600" FontAttributes="Bold" />
+           
                 <Label x:Name="lblMessage"
                        FontAttributes="Italic"
                        FontSize="Large"

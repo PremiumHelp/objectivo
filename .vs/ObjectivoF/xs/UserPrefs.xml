@@ -1,31 +1,22 @@
-﻿<Properties StartupConfiguration="{BC05B089-5F0E-44F0-B215-83018782BBEB}|Default">
+﻿<Properties StartupConfiguration="{C1FED18F-709A-4D04-846C-AB23B6B35B02}|Default">
   <MonoDevelop.Ide.ItemProperties.ObjectivoF.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.1F5CAF60-5ADA-4B42-93DB-9D80C482F256" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ObjectivoF/TwoQuiz.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Source Not Available">
     <Files>
-      <File FileName="ObjectivoF/FinalScore.xaml.cs" Line="14" Column="38" />
-      <File FileName="ObjectivoF/TwoQuiz.xaml.cs" Line="257" Column="14" />
-      <File FileName="ObjectivoF/TwoQuiz.xaml" Line="43" Column="1" />
-      <File FileName="ObjectivoF/TabbedPages/Favorites.xaml.cs" Line="20" Column="18" />
-      <File FileName="ObjectivoF/Services/HttpService.cs" Line="93" Column="1" />
-      <File FileName="ObjectivoF/TwoParticipate.xaml" Line="9" Column="1" />
-      <File FileName="ObjectivoF/TwoParticipate.xaml.cs" Line="24" Column="16" />
-      <File FileName="ObjectivoF/Models/Group.cs" Line="1" Column="1" />
-      <File FileName="ObjectivoF/Models/User.cs" Line="1" Column="1" />
-      <File FileName="ObjectivoF/Models/UserScore.cs" Line="4" Column="15" />
-      <File FileName="ObjectivoF/Models/Vocab.cs" Line="1" Column="1" />
-      <File FileName="ObjectivoF/Models/vocabElement.cs" Line="1" Column="1" />
-      <File FileName="ObjectivoF/Models/VoiceResult.cs" Line="1" Column="1" />
-      <File FileName="ObjectivoF/Models/XamarinQuiz.cs" Line="1" Column="1" />
-      <File FileName="ObjectivoF/ViewModel/QuestionViewModel.cs" Line="12" Column="26" />
-      <File FileName="../../../../../Library/Frameworks/Xamarin.iOS.framework/Versions/12.2.1.10/src/Xamarin.iOS/mcs/class/referencesource/mscorlib/system/threading/threadpool.cs" Line="1208" Column="6" />
+      <File FileName="ObjectivoF/Services/HttpService.cs" Line="102" Column="54" />
+      <File FileName="ObjectivoF/TwoQuiz.xaml" Line="19" Column="1" />
+      <File FileName="ObjectivoF/TwoQuiz.xaml.cs" Line="218" Column="1" />
+      <File FileName="ObjectivoF/Models/Game.cs" Line="5" Column="6" />
+      <File FileName="Droid/MainActivity.cs" Line="30" Column="1" />
+      <File FileName="ObjectivoF/ViewModel/ViewModelScore.cs" Line="55" Column="38" />
+      <File FileName="ObjectivoF/FinalScore.xaml" Line="16" Column="1" />
+      <File FileName="../../../../../Library/Frameworks/Xamarin.Android.framework/Versions/9.0.0-20/lib/xamarin.android/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="1715" Column="2" />
+      <File FileName="Source Not Available" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/Services/HttpService.cs" relfile="ObjectivoF/Services/HttpService.cs" line="93" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.ObjectivoF.Droid AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" PreferredExecutionTarget="Android.Nexus_5X_API_26" />

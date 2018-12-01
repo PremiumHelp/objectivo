@@ -3,11 +3,11 @@
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
           <Label Text="{Binding CurrentUser}" FontAttributes="Bold"></Label>
-          <Label Text="{Binding CurrentUserScore} your score is:"  ></Label>
+          <Label Text="{Binding CurrentUserScore}" ></Label>
         
           <Label Text="{Binding OtherUser}" FontAttributes="Bold" ></Label>
           
-       <Label Text="{Binding OtherUserScore} your score is:" ></Label>
+       <Label Text="{Binding OtherUserScore}"></Label>
             <Button Text="Cancel" TextColor="Red" Clicked="CancelGame"></Button>
      
         </StackLayout>

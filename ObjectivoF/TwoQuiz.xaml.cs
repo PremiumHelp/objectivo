@@ -214,28 +214,8 @@ namespace ObjectivoF
             };
         }
        
-        private void timer(double time)
-        {
-            Device.StartTimer(TimeSpan.FromSeconds(1), () => {
-                time += 1;
-                _lblTime.Text = String.Format("{0}", time);
+  
 
-                if (time == 15.00)
-                {
-                    DisplayAlert("Time is up!", "You lost the game!", "Ok");
-                    Navigation.PushAsync(new TwoThanks());
-                    return false;
-                }
-
-                return true;
-            });
-        }
-
-        private void TimerStarterClicked(object sender, EventArgs e)
-        {
-            double time = double.Parse(_lblTime.Text);
-            timer(time);
-        }
 
 
 
@@ -276,9 +256,14 @@ namespace ObjectivoF
                 var data = await response.Content.ReadAsStringAsync();
                 var MongoResponse = JObject.Parse(data);
                 finalScore.currentUser = MongoResponse["currentUser"].ToString();
-                finalScore.currentUserScore = (int)MongoResponse["currentUserScore"];
+                string temp1;
+                string temp2;
+                temp1 = MongoResponse["currentUserScore"].ToString();
                 finalScore.otherUser = MongoResponse["otherUser"].ToString();
-                finalScore.otherUserScore =(int)MongoResponse["otherUserScore"];
+                temp2 =MongoResponse["otherUserScore"].ToString();
+                finalScore.currentUserScore = int.Parse(temp1);
+                finalScore.otherUserScore = int.Parse(temp2);
+
             }
             Application.Current.MainPage = new FinalScore(finalScore);
         }

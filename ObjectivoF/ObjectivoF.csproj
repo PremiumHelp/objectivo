@@ -159,10 +159,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="TwoThanks.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Include="FinalScore.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
@@ -299,9 +295,6 @@
     <Compile Include="ViewModel\TwoQuestionViewModel.cs" />
     <Compile Include="TwoQuiz.xaml.cs">
       <DependentUpon>TwoQuiz.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="TwoThanks.xaml.cs">
-      <DependentUpon>TwoThanks.xaml</DependentUpon>
     </Compile>
     <Compile Include="FinalScore.xaml.cs">
       <DependentUpon>FinalScore.xaml</DependentUpon>

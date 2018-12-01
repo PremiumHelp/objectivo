@@ -111,7 +111,6 @@
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/obj/Debug/Animals.xaml.g.cs
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/obj/Debug/Views/French.xaml.g.cs
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/obj/Debug/TwoQuiz.xaml.g.cs
-/Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/obj/Debug/TwoThanks.xaml.g.cs
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/obj/Debug/FinalScore.xaml.g.cs
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/obj/Debug/ObjectivoF.csproj.CoreCompileInputs.cache
 /Users/amrafeta/Desktop/ObjectivoFront/objectivo/ObjectivoF/obj/Debug/XamlC.stamp
