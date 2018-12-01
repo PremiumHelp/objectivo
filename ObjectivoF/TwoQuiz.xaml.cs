@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net;
 using System.Threading.Tasks;
 using Microsoft.WindowsAzure.MobileServices;
+using Newtonsoft.Json.Linq;
+using ObjectivoF.Models;
 using ObjectivoF.ViewModel;
 using Xamarin.Forms;
 
@@ -13,7 +16,8 @@ namespace ObjectivoF
         public static int currentQ = 1;
         public static int Score = 0;
         public static string Username = "";
-
+        public static string otherUsername = "";
+        public static int otherScore = 0;
 
 
         private static MobileServiceClient mobileServiceClient;
@@ -144,10 +148,7 @@ namespace ObjectivoF
                 else
                 {
                     score = score / 2;
-                    currentGame.FirstPlayerId = App.UserId;
-                    currentGame.FirstPlayerScore = score;
-                    var response = HttpService.ChangeResults(Constants.uri + path + currentGame.GameId, currentGame);
-
+                  
                 }
             };
 
@@ -157,9 +158,6 @@ namespace ObjectivoF
                 else
                 {
                     score = score / 2;
-                    currentGame.FirstPlayerId = App.UserId;
-                    currentGame.FirstPlayerScore = score;
-                    var response = HttpService.ChangeResults(Constants.uri + path + currentGame.GameId, currentGame);
 
                 }
             };
@@ -173,9 +171,7 @@ namespace ObjectivoF
                 else
                 {
                     score = score / 2;
-                    currentGame.FirstPlayerId = App.UserId;
-                    currentGame.FirstPlayerScore = score;
-                    var response = HttpService.ChangeResults(Constants.uri + path + currentGame.GameId, currentGame);
+                  
                 }
             };
             btnAnswerFour.Clicked += (sender, ea) =>
@@ -187,9 +183,7 @@ namespace ObjectivoF
                 else
                 {
                     score = score / 2;
-                    currentGame.FirstPlayerId = App.UserId;
-                    currentGame.FirstPlayerScore = score;
-                    var response = HttpService.ChangeResults(Constants.uri + path + currentGame.GameId, currentGame);
+                  
                 }
             };
             btnAnswerFive.Clicked += (sender, ea) =>
@@ -201,8 +195,7 @@ namespace ObjectivoF
                 else
                 {
                     score = score / 2;
-                    var response = HttpService.ChangeResults(Constants.uri + path + currentGame.GameId, newGame);
-
+                  
                 }
             };
             btnAnswerSix.Clicked += (sender, ea) =>
@@ -216,11 +209,7 @@ namespace ObjectivoF
 
                     score = score / 2;
 
-                    currentGame.FirstPlayerId = App.UserId;
-                    currentGame.FirstPlayerScore = score;
-                    var response = HttpService.ChangeResults(Constants.uri + path + currentGame.GameId, currentGame);
 
-                    //  call the api for changing the score using the variable score and the game id i gave you when you created the game
                 }
             };
         }
@@ -253,6 +242,9 @@ namespace ObjectivoF
         private void DoAnswer()
         {
             Settings1.Score += score;
+            currentGame.FirstPlayerId = App.UserId;
+            currentGame.FirstPlayerScore = score;
+            var response = HttpService.ChangeResults(Constants.uri + path + currentGame.GameId, currentGame);
             if (Settings1.currentQ < Settings1.qCount)
             {
                 Settings1.currentQ++;
@@ -265,9 +257,30 @@ namespace ObjectivoF
             }
         }
        
-        async void NavigateToEndPage()
+          async void NavigateToEndPage()
         {
-            Application.Current.MainPage = new TwoThanks();
+            currentGame.FirstPlayerId = App.UserId;
+            currentGame.FirstPlayerScore = score;
+
+            var response = await HttpService.GetResult(Constants.uri + path +"getResults/"+ currentGame.GameId, currentGame);
+
+
+         
+
+            FinalScoreModel finalScore = new FinalScoreModel();
+          
+            if (response.StatusCode == HttpStatusCode.OK)
+            {
+
+
+                var data = await response.Content.ReadAsStringAsync();
+                var MongoResponse = JObject.Parse(data);
+                finalScore.currentUser = MongoResponse["currentUser"].ToString();
+                finalScore.currentUserScore = (int)MongoResponse["currentUserScore"];
+                finalScore.otherUser = MongoResponse["otherUser"].ToString();
+                finalScore.otherUserScore =(int)MongoResponse["otherUserScore"];
+            }
+            Application.Current.MainPage = new FinalScore(finalScore);
         }
     }
 }

@@ -85,13 +85,15 @@ namespace ObjectivoF
             return await httpClient.SendAsync(request);
         }
 
-        public static async Task<HttpResponseMessage> GetResults(string uri)
+        public static async Task<HttpResponseMessage> GetResult(string uri, Game currentGame)
         {
+            string json = JsonConvert.SerializeObject(currentGame);
+            var content = new StringContent(json.ToString(), Encoding.UTF8, "application/json");
             var request = new HttpRequestMessage();
             request.RequestUri = new Uri(uri);
-            request.Method = HttpMethod.Get;
-            var response = await httpClient.SendAsync(request);
-            return response;
+            request.Method = HttpMethod.Post;
+            request.Content = content;
+            return await httpClient.SendAsync(request);
         }
 
         public static async Task<HttpResponseMessage> ChangeResults(string uri,Game currentGame)
@@ -104,5 +106,7 @@ namespace ObjectivoF
             request.Content = content;
             return await httpClient.SendAsync(request);
         }
+
+
     }
 }

@@ -13,6 +13,7 @@ namespace ObjectivoF
             insertUser();
             lblScore.Text = Settings1.Score.ToString();
             lblUsername.Text = Settings1.Username;
+           
         }
        
         public async void insertUser()
@@ -21,7 +22,9 @@ namespace ObjectivoF
             UserScore item = new UserScore()
           {
                 Username = Settings1.Username,
-                Score = Settings1.Score
+                Score = Settings1.Score,
+                
+
             };
             if (Settings1.MobileService != null)
             {

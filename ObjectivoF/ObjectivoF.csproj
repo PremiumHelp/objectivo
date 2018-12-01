@@ -163,6 +163,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="FinalScore.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -299,7 +303,11 @@
     <Compile Include="TwoThanks.xaml.cs">
       <DependentUpon>TwoThanks.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel\ViewModelResult.cs" />
+    <Compile Include="FinalScore.xaml.cs">
+      <DependentUpon>FinalScore.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\ViewModelScore.cs" />
+    <Compile Include="Models\FinalScoreModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.ProjectOxford.Vision">

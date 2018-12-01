@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ObjectivoF.TwoThanks">
    <ContentPage.Content>
         <StackLayout HorizontalOptions="Center"  VerticalOptions="Center">
+           
             <Label x:Name="lblUsername"
                    FontAttributes="Bold"
                    FontSize="Large"
@@ -14,14 +15,14 @@
                    
                    Text="1000" />
              
-            <Label x:Name="lbllUsername"
+            <Label x:Name="otherUsername"
                    FontAttributes="Bold"
                    FontSize="Large"
                    HorizontalTextAlignment="Center"
                    TextColor="Gray" />
             <Label HorizontalTextAlignment="Center" Text="Your score is" />
             
-            <Label x:Name="lbllScore"
+            <Label x:Name="otherScore"
                    FontSize="Large"
                    HorizontalTextAlignment="Center"
                    Text="0" />
